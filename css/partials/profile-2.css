@@ -1,0 +1,106 @@
+body {
+    background-color: var(--background-color);
+}
+
+/* =====================================
+  4. PAGE HERO.
+=========================================*/
+.pages-hero {
+    background-color: var(--dark-color);
+    height: 250px;
+}
+
+/* ========== PROFILE CONTENT ========== */
+.profile-signature {
+    width: 250px;
+    margin: auto;
+}
+
+h5.profile-name {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 10px 0px 25px;
+}
+
+.profile-feature {
+    background-image: url("../../images/commons/inner-pages/profile-pic.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.profile-about-left {
+    padding-right: 50px;
+}
+
+.profile-about-right h3 {
+    font-size: 20px;
+}
+
+.profile-education-box h4 {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: none;
+}
+
+.profile-education-box p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+ul.aware-list li {
+    font-size: 13px;
+    color: var(--dark-color);
+}
+
+/* ========== PROFILE CAROUSEL ========== */
+.carousel-title h3 {
+    text-align: left;
+    margin: 0px 0px 20px 10px;
+}
+
+.profile-carousel {
+    position: relative;
+}
+
+.profile-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.profile-carousel .owl-carousel .item {
+    margin: 10px;
+}
+
+.profile-carousel .owl-dots {
+    display: none;
+}
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+
+@media (max-width:991px) {
+    .pages-hero {
+        height: 200px;
+    }
+}
+
+
+@media (max-width:767px) {
+    .pages-hero {
+        height: 90px;
+    }
+
+    .profile-about-left {
+        padding-right: 0px;
+    }
+}
+
+@media (max-width:576px) {}
+
+@media (max-width:480px) {}

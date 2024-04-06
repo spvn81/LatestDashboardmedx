@@ -1,0 +1,467 @@
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+  --primary-color: var(--medical-primary);
+  --secundary-color: var(--medical-secundary);
+  --headline-color: var();
+  --paragraph-color: var();
+  --background-color: var();
+}
+
+/* ===================================== 
+    MEDICAL. 
+===================================== */
+.bg-wrapper {
+  padding: 5rem 0rem;
+  background-color: #F7F7FF;
+}
+
+.medical-front-box {
+  padding: 20px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+  -moz-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+  box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+}
+
+.medical-front-box .mb-icon {
+  width: 60px;
+}
+
+.medical-front-box p {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 0px;
+}
+
+.medical-front-box h5 {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+/* ========== MEDICAL ABOUT ========== */
+.medical-about-right {
+  padding-left: 30px;
+}
+
+.medical-about-right h5.overheadline {
+  font-size: 14px;
+  color: var(--secundary-color);
+  text-transform: uppercase;
+}
+
+.medical-banner {
+  position: relative;
+  margin-top: 30px;
+  padding: 20px 100px 20px 20px;
+  border-left: solid 5px var(--secundary-color);
+  -webkit-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+  -moz-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+  box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+}
+
+.medical-banner h4 {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500px;
+  margin-bottom: 0px;
+}
+
+.medical-banner .fas {
+  font-size: 70px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  opacity: 0.2;
+}
+
+/* ========== SERVICES CAROUSEL ========== */
+.medical-carousel {
+  position: relative;
+}
+
+.medical-carousel .owl-theme .custom-nav {
+  display: none;
+}
+
+.medical-carousel .owl-carousel .item {
+  margin: 10px;
+}
+
+.medical-carousel .owl-dots {
+  display: none;
+}
+
+.medical-services-card {
+  background-color: #FFFFFF;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+  -moz-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+  box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+}
+
+.medical-caption {
+  padding: 25px 15px 10px;
+}
+
+.medical-caption .medical-icon {
+  width: 50px !important;
+}
+
+.medical-caption h6 {
+  font-size: 12px;
+  color: var(--paragraph-color);
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+
+.medical-caption h3 {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 0px;
+}
+
+.medical-caption p {
+  font-size: 13px;
+  line-height: 22px;
+  margin: 10px auto 0px;
+  padding: 0px 10px;
+}
+
+.medical-caption h5.read-more {
+  font-size: 13px;
+  font-weight: normal;
+  margin-top: 15px;
+  padding: 0px 10px;
+}
+
+h5.read-more::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f061";
+  margin-left: 10px;
+}
+
+h5.read-more a {
+  color: var(--primary-color);
+}
+
+h5.read-more a:hover {
+  color: var(--secundary-color) !important;
+}
+
+/* ========== CENTER TESTIMONIALS ========== */
+.center-testimonial-carousel {
+  position: relative;
+}
+
+.center-testimonial-carousel .owl-theme .custom-nav {
+  display: none;
+}
+
+.center-testimonial-carousel .owl-carousel .item .tp-card-center {
+  margin: 50px 10px 10px;
+}
+
+.center-testimonial-carousel .owl-dots {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.center-testimonial-carousel .owl-dots button.owl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  background: var(--owl-dots);
+  margin: 0 3px;
+  box-shadow: none;
+  border: none;
+}
+
+.center-testimonial-carousel .owl-dots button.owl-dot.active {
+  background-color: var(--primary-color);
+  width: 20px;
+  border-radius: 25px;
+}
+
+.center-testimonial-carousel .owl-dots button.owl-dot:focus {
+  outline: none;
+}
+
+.center-testimonial-card .tp-avatar {
+  width: 80px;
+  margin: auto;
+}
+
+.center-testimonial-card .tp-testimonial-content {
+  font-size: 18px;
+  font-style: italic;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.testimonial-author {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.autor-profession {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/**  Call To Action **/
+.call-action-wrapper {
+  background-color: var(--primary-color);
+  padding: 50px 0px;
+}
+
+/* ==========   WHY US ========== */
+.tp-why-us-left-side {
+  padding: 70px 30px 0 0;
+}
+
+.tp-why-us-left-side h5.overheadline {
+  text-transform: uppercase;
+  color: var(--secundary-color);
+  font-size: 16px;
+}
+
+.mc-flex-box-layer {
+  margin-top: 50px;
+}
+
+.tp-flex-box {
+  padding: 15px;
+  max-width: 500px;
+}
+
+.tp-media-object {
+  display: flex !important;
+}
+
+.tp-media-object .tp-media-img {
+  width: 90px;
+}
+
+.tp-media-caption {
+  margin-left: 1rem;
+}
+
+.tp-media-caption h4 {
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.tp-media-caption p {
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 0px;
+  padding-right: 30px;
+}
+
+.tp-why-us-right-side {
+  background-image: url("../../../images/commons/home-niches/medical/medical5.png");
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* ========== YOUTUBE POPUP ========== */
+.popup-youtube {
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: 80px;
+  right: 80px;
+  transform: none;
+  text-align: center;
+}
+
+.popup-youtube .video-image {
+  position: relative;
+  display: inline-block;
+}
+
+.popup-youtube .video-image img {
+  width: 100%
+}
+
+.popup-youtube .video-image img a:link {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.popup-youtube .video-image img a:visited {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.popup-youtube .video-image img a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.popup-youtube .video-image img a:active {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* ========== PULSING BTN ========== */
+.pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: var(--corporate-primary);
+  width: 70px;
+  height: 70px;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  font-size: 30px;
+  transform: translate(-50%, -50%);
+  padding-left: 4px;
+}
+
+.pulse::before,
+.pulse::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid var(--corporate-primary);
+  top: -15px;
+  right: -15px;
+  left: -15px;
+  bottom: -15px;
+  animation: pulse 1.5s linear infinite;
+}
+
+.pulse::after {
+  animation-delay: .5s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* ========== COUNTER ========== */
+.counter-parallax {
+  background-image: url("../../../images/commons/home-niches/medical/img42.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.counter-parallax:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #FFFFFF, #FFFFFF);
+  opacity: 0;
+}
+
+.content-parallax { 
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  max-width: 700px;
+}
+
+.content-parallax p {
+  color: var(--headline-color);
+  margin: 15px 0px 30px;
+  line-height: 28px;
+}
+
+.content-parallax h5 {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.content-parallax h2 {
+  color: var(--headline-color);
+}
+
+.tp1-counter-box {
+  background-color: var(--primary-color);
+  padding: 15px;
+}
+
+.tp1-counter-box .education-icon {
+  width: 40px;
+}
+
+.tp1-counter-box .counter {
+  color: #FFFFFF;
+}
+
+.tp1-counter-box p.counter-description {
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 0px !important;
+}
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1200px) {}
+
+@media (max-width:991px) {
+  .medical-about-right {
+    padding-left: 0px;
+  }
+
+  .medical-banner {
+    max-width: 600px;
+    position: relative;
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+}
+
+@media (max-width:767px) {}
+
+@media (max-width:576px) {
+  .center-testimonial-card .tp-testimonial-content {
+    font-size: 16px;
+  }
+
+  .tp-why-us-left-side {
+    padding: 0px;
+  }
+
+}
+
+@media (max-width:480px) {
+  .medical-services-card {
+    padding: 0px;
+  }
+}

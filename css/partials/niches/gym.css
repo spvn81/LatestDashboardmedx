@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&amp;display=swap');
+
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+    --primary-color: var(--gym-primary);
+    --secundary-color: var(--gym-secundary);
+    --headline-color: var();
+    --paragraph-color: var();
+    --background-color: var();
+}
+
+
+
+/* ===================================== 
+    REVOLUTION SLIDER CUSTOM CSS. 
+===================================== */
+.soundcloudwrapper iframe {
+    width: 100% !important
+}
+
+.news-header .tp-tab-title {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    margin-bottom: 5px;
+    width: 350px;
+    display: block;
+    letter-spacing: 1px;
+}
+
+.news-header .tp-tab-desc {
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffcc00;
+    line-height: 25px;
+    font-family: "Roboto";
+}
+
+/* ===================================== 
+    SERVICES. 
+===================================== */
+.tp-gym-about-content {
+    margin-top: 70px;
+}
+
+.tp-gym-services-layer {
+    margin-top: 30px;
+}
+
+.tp-gym-box {
+    margin: 15px 5px;
+}
+
+.tp-gym-service-icons {
+    width: 50px;
+}
+
+.tp-gym-box h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.tp-gym-box p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.tp-gym-headline {
+    border-left: solid 5px var(--primary-color);
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.tp-gym-headline h5 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--secundary-color);
+    margin-bottom: 0px;
+}
+
+.tp-gym-front-gallery {
+    margin-top: -115px;
+    z-index: 0;
+    position: relative;
+}
+
+.tp-gym-thumb {
+    position: relative;
+}
+
+.tp-gym-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.tp-gym-icon-front {
+    width: 50px;
+}
+
+.tp-gym-caption h4 {
+    font-size: 18px;
+    color: #FFF;
+    margin-top: 5px;
+}
+
+.tp-gym-panel-aside {
+    background-color: var(--gym-soft-primary);
+    padding: 25px 20px;
+}
+
+.tp-gym-panel-center {
+    background-color: var(--gym-primary);
+    padding: 25px 20px;
+}
+
+.stripe-icon {
+    width: 55px;
+}
+
+.tp-gym-panel-aside h4 {
+    color: #FFF;
+    margin-bottom: 5px;
+}
+
+.tp-gym-panel-aside p {
+    color: #FFF;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 0px;
+}
+
+.tp-gym-panel-center h4 {
+    color: #FFF;
+    margin-bottom: 5px;
+}
+
+.tp-gym-panel-center p {
+    color: #FFF;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 0px;
+}
+
+.image-hover figure {
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.image-hover figure.tp-gym-thumb:hover+span {
+    bottom: -36px;
+    opacity: 1;
+}
+
+/* Zoom In #1 */
+.zoom-in .zoom-thumb {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+.zoom-in:hover .zoom-thumb {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* ========== GALLERY GRID ========== */
+.tp-gallery-grid {
+    position: relative;
+}
+
+.tp-back-rectangle {
+    width: 150px;
+    height: 150px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.tp-gallery-grid:hover .tp-back-rectangle {
+    width: 200px;
+    height: 202px;
+}
+
+.gg-thumb {
+    position: relative;
+    z-index: 2;
+}
+
+.tp-gg-caption {
+    background-color: #FFF;
+    max-width: 300px;
+    padding: 25px;
+    margin-top: -50px;
+    position: relative;
+    z-index: 2;
+}
+
+.tp-gg-caption h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.tp-gg-caption h4 a {
+    color: var(--headline-color);
+}
+
+.tp-gg-caption p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 0px;
+}
+
+h6.tp-gym-learn-more {
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+h6.tp-gym-learn-more a {
+    color: var(--headline-color);
+    text-transform: none;
+    text-decoration: none;
+}
+
+h6.tp-gym-learn-more::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f061";
+    margin-left: 15px;
+}
+
+/* ========== TEAM CAROUSEL ========== */
+.team-carousel {
+    position: relative;
+}
+
+.team-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.team-carousel .owl-carousel .item .tp-gym-trainer {
+    margin: auto 10px;
+}
+
+.team-carousel .owl-dots {
+    /* text-align: center;
+    margin-top: 25px; */
+    text-align: center;
+    margin-top: -9px;
+    position: absolute;
+    top: -42px;
+    right: 0;
+
+}
+
+.team-carousel .owl-dots button.owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--owl-dots);
+    margin: 0 3px;
+    box-shadow: none;
+    border: none;
+}
+
+.team-carousel .owl-dots button.owl-dot.active {
+    background-color: var(--primary-color);
+    width: 20px;
+    border-radius: 25px;
+}
+
+.team-carousel .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.tp-gym-trainer {
+    position: relative;
+}
+
+.gt-caption {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(252, 47, 29, 0.4);
+    width: 300px;
+    padding: 30px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.tp-gym-trainer:hover .gt-caption {
+    background-color: rgba(252, 47, 29, 0.8);
+}
+
+.gt-caption h4 {
+    color: #FFF;
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.gt-caption p {
+    color: #FFF;
+    margin-bottom: 0px;
+}
+
+/* ========== SOCIAL ICONS ========== */
+.trainer-social ul li {
+    display: inline-block;
+    margin-right: 10px;
+    color: #FFF;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    width: auto;
+    height: auto;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    margin: 0px 10px;
+}
+
+.trainer-social ul li a {
+    color: #FFF;
+}
+
+.trainer-social ul li:hover {
+    background-color: none !important;
+}
+
+.trainer-social ul li:hover .fab {
+    color: #FFF;
+}
+
+/* ========== CALL TO ACTION ========== */
+.tp-gym-cta {
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+.gym-cta-img {
+    width: 570px;
+    top: -150px;
+    left: 50px;
+}
+
+.gym-cta-content {
+    margin-top: 170px;
+    padding-right: 10px;
+}
+
+.gym-cta-content h2 {
+    color: #FFF;
+}
+
+.gym-cta-content p {
+    color: #FFF;
+}
+
+.gym-cta-conten .btn-default-white {
+    margin-top: 30px;
+}
+
+/* ========== NEWS CAROUSEL ========== */
+.news-carousel {
+    position: relative;
+}
+
+.news-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.news-carousel .owl-carousel .item .news-box {
+    margin: auto 10px;
+}
+
+.news-carousel .owl-dots {
+    display: none;
+}
+
+.nb-thumb {
+    position: relative;
+    z-index: 1;
+}
+
+.nb-avatar {
+    width: 50px !important;
+    border-radius: 50%;
+}
+
+.nb-caption {
+    width: 250px;
+    padding: 15px;
+    margin-top: -80px;
+    background-color: #FFF;
+    z-index: 10;
+    position: relative;
+    border-top-right-radius: 10px;
+}
+
+.nb-caption .moc-caption h4 {
+    font-size: 15px;
+    color: var(--headline-color);
+    margin-bottom: 0px;
+}
+
+.nb-caption .moc-caption p {
+    font-size: 14px;
+    color: var(--paragraph-color);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.nb-caption .flex-grow-1 {
+    padding-top: 3px;
+}
+
+.nb-caption-bottom {
+    margin-top: 25px;
+}
+
+.nb-caption-bottom h4 a {
+    color: var(--headline-color);
+}
+
+.moc-thumbnail {
+    width: 50px;
+}
+
+/* ========== COUNTER ========== */
+.tp-counter-parallax {
+    background-image: url("../../../images/commons/home-niches/fitness2/fitness6.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.tp-counter-content {
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 650px;
+}
+
+h5.overheading {
+    color: var(--primary-color);
+}
+
+.tp-counter-content h2 {
+    color: #FFFFFF;
+}
+
+.tp-counter-content p {
+    color: #FFFFFF;
+    margin: 20px 0px 35px;
+}
+
+.tp1-counter-box {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.mo-counter {
+    display: flex !important;
+}
+
+.mo-counter-thumb {
+    width: 50px;
+    flex-shrink: 0 !important;
+}
+
+.tp-cb-caption {
+    margin-left: 1rem;
+}
+
+.tp-cb-caption .counter {
+    font-family: var(--base-font);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--headline-color);
+    margin-bottom: 0px;
+}
+
+.tp-cb-caption p {
+    font-size: 10px;
+    line-height: 1.3;
+    color: var(--paragraph-color);
+    margin: 0px;
+}
+
+.moc-center {
+    align-items: center !important;
+}
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1200px) {}
+
+@media (max-width:991px) {
+    .tablet-mt-4 {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width:767px) {
+    .mobile-mt-4 {
+        margin-top: 4rem;
+    }
+
+    .tp-counter-parallax {
+        height: 100%;
+        padding: 60px 0px;
+    }
+
+    .tp-counter-content {
+        margin: 0px;
+        position: relative;
+        top: auto;
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        max-width: 100%;
+    }
+
+    .tp1-counter-box {
+        padding: 10px;
+        width: 200px;
+        margin: 5px 0px;
+    }
+}
+
+@media (max-width:576px) {
+    .nb-caption {
+        display: none;
+    }
+
+}
+
+@media (max-width:480px) {}
+
+
+@media (max-width:380px) {
+    .gt-caption {
+        width: 100%;
+        padding: 30px;
+        border-radius: 0px;
+    }
+}

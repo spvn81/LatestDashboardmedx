@@ -1,0 +1,373 @@
+/* ===================================== 
+    FONTS. 
+===================================== */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap');
+
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+    --primary-color: var();
+    --secundary-color: var();   
+    --headline-color: var();
+    --paragraph-color: var();
+    --background-color: var();
+}
+
+/* ===================================== 
+    NAME. 
+===================================== */
+.about-left{
+    padding: 60px 30px 0px 0px;
+}
+
+.about-left h5.overheadline{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: none;
+    color: var(--primary-color);
+    font-family: 'Great Vibes', cursive;
+}
+
+.about-left p{
+    margin: 25px 0px 30px;
+}
+
+.about-left .tp-btn-primary{
+    border-radius: 50px;
+}
+
+
+/* ========== #### ========== */
+.destinations-carousel {
+    position: relative;
+}
+
+.destinations-carousel .owl-theme .custom-nav {
+    display: none;
+}
+.destinations-carousel .owl-carousel .item{
+    margin: 10px;
+}
+
+.destinations-carousel .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.destinations-carousel .owl-dots button.owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--owl-dots);
+    margin: 0 3px;
+    box-shadow: none;
+    border: none;
+}
+
+.destinations-carousel .owl-dots button.owl-dot.active {
+    background-color: var(--primary-color);
+    width: 20px;
+    border-radius: 25px;
+}
+
+.destinations-carousel .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.hotel-card{
+    -webkit-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    -moz-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    border-radius: 10px;
+}
+
+.hotel-card-thumb{
+    position: relative;
+}
+
+.thumb-caption-left{
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+
+.thumb-caption-left h5{
+    color: #FFF;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.thumb-caption-right{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.thumb-caption-right h5{
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.hotel-card-thumb img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.hotel-card-caption{
+    background-color: #FFF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 30px 20px;
+}
+
+.hotel-card-caption h6.price{
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.hotel-card-caption h3.destination{
+    color: var(--headline-color);
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.hotel-card-caption h3.destination a{
+    color: var(--headline-color);
+}
+
+.hotel-card-caption p{
+    font-size: 14px;
+    color: #bfbfbf;
+    margin-bottom: 0px;
+}
+
+.hotel-card-caption .card-book{
+    text-align: right;
+}
+
+.hotel-card-caption .tp-btn-primary{
+    padding: 5px 20px;
+    font-size: 13px;
+    text-transform: none;
+    border-radius: 50px;
+    text-align: right;
+}
+
+.destinations-carousel .image-hover figure {
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .destinations-carousel .image-hover figure:hover+span {
+    bottom: -36px;
+    opacity: 1;
+  }
+  
+  /* Zoom In #1 */
+  .destinations-carousel .zoom-in img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+  }
+  
+  .destinations-carousel .zoom-in:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+
+/* ========== #### ========== */
+.base-carousel {
+    position: relative;
+}
+
+.base-carousel .owl-theme .custom-nav {
+    display: none;
+}
+.base-carousel .owl-carousel .item{
+    margin: 10px;
+}
+
+.base-carousel .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.base-carousel .owl-dots button.owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--owl-dots);
+    margin: 0 3px;
+    box-shadow: none;
+    border: none;
+}
+
+.base-carousel .owl-dots button.owl-dot.active {
+    background-color: var(--primary-color);
+    width: 20px;
+    border-radius: 25px;
+}
+
+.base-carousel .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+/* ========== #### ========== */
+.fc-left{
+    background-color: #000000;
+    height: 450px;
+    position: relative;
+}
+
+.fc-left h2{
+    color: #FFF;
+}
+
+.fc-left p{
+    color: #FFF;
+}
+
+.fc-right{
+    height: 450px;
+    margin-top: 70px;
+}
+
+.middle { 
+    margin: 0px; 
+    position: absolute; 
+    top: 50%; 
+    -ms-transform: translateY(-50%); 
+    transform: translateY(-50%); 
+    text-align: left; 
+    padding: 0px 50px;
+  }
+
+/* ========== #### ========== */
+.newsletter-banner{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.newsletter-content{
+    max-width: 600px;
+    margin: auto;
+}
+
+.newsletter-content h2{
+    color: #FFFFFF;
+}
+
+.newsletter-content p{
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+.newsletter-content .tp-btn-primary{
+    background-color: #000000;
+    padding: 15px 30px;
+}
+
+.newsletter-content .form-layer{
+    max-width: 500px;
+    margin: auto;
+    font-size: 14px;
+}
+
+.newsletter-content .form-layer .form-control {
+    display: block;
+    padding: 5px 20px;
+    font-family: var(--base-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .newsletter-content .form-layer .form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  }
+
+  /* ========== #### ========== */
+.dental-parallax-ws{ 
+    background-image: url("../../../images/commons/home-niches/hotel/img32.jpg");
+    height: 500px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.dental-parallax-ws:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, var(--primary-heading), var(--primary-heading));
+  opacity: 0.4;
+}
+
+.parallax-label {
+    background-color: #FFF;
+    border-left: solid 5px #3AB3DF;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 600px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgb(204 204 204 / 60%);
+    -moz-box-shadow: 0 0 10px rgba(204,204,204,0.6);
+    -webkit-box-shadow: 0 0 10px rgb(204 204 204 / 60%);
+    -o-box-shadow: 0 0 10px rgba(204,204,204,0.6);
+}
+
+
+/* ========== #### ========== */
+/* ========== #### ========== */
+/* ========== #### ========== */
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1200px) {
+    
+}
+@media (max-width:991px) {
+
+}
+@media (max-width:767px) {
+    
+}
+@media (max-width:576px) {
+
+}
+@media (max-width:480px) {
+
+}

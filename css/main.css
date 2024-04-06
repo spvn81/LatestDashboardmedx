@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&amp;family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&amp;display=swap');
+
+/* ==================================================
+  * Template: Merit
+  * Version:  2
+  * Date:    August 15, 2022 
+===================================================== */
+
+/*==================================================*/
+/* [Table of contents] */
+/*==================================================*/
+
+/*	
+    1. TEMPLATE CSS PARTIALS.
+    2. SPACE AND ALIGNMENT. 
+    3. MEDIA QUERIES.  
+*/
+
+/* =====================================
+    1. TEMPLATE CSS PARTIALS.
+===================================== */
+@import url('../fonts/css/all.min.css');
+@import url('partials/compressed/normalize.min.css');
+@import url('lib/bootstrap.min.css');
+@import url('lib/flickity.min.css');
+@import url('lib/magnific-popup.min.css');
+@import url('lib/owl.carousel.min.css');
+@import url('lib/slick.min.css');
+@import url('lib/aos.min.css');
+
+@import url('partials/reset.css');
+@import url('partials/variables.css');
+@import url('partials/navbar.min.css');
+@import url('partials/buttons.css');
+@import url('partials/pre_loader.min.css');
+@import url('partials/contact.css');
+@import url('partials/scrolling_top.css');
+@import url('partials/youtube_popup.css');
+@import url('partials/magnific_popup.css');
+@import url('partials/filter_gallery.css');
+@import url('partials/shortcodes.css');
+@import url('partials/elements.min.css');
+@import url('partials/inner-pages.min.css');
+@import url('partials/blog.css');
+@import url('partials/shop.css');
+@import url('stylesheet.css');
+
+/* =====================================
+    2. SPACE AND ALIGNMENT.
+===================================== */
+.mt-3,
+.my-3 {
+  margin-top: 1.5rem !important;
+}
+
+.mt-4,
+.my-4 {
+  margin-top: 4rem !important;
+}
+
+.mb-4,
+.my-4 {
+  margin-bottom: 3.5rem !important;
+}
+
+.mt-5,
+.my-5 {
+  margin-top: 5rem !important;
+}
+
+.mb-5,
+.my-5 {
+  margin-bottom: 5rem !important;
+}
+
+.tp-right-padding{
+  padding-right: var(--normal-right-padding);
+}
+.tp-left-padding{
+  padding-left: var(--normal-left-padding);
+}
+
+.tp-right-margin{
+  margin-right: var(--normal-right-margin);
+}
+.tp-left-margin{
+  margin-right: var(--normal-right-margin);
+}
+
+.spacing-box-lg{
+  margin-top: 5rem;
+}
+
+section{
+  overflow: hidden !important;
+}
+
+.bg-wrapper {
+  padding: 5rem 0rem;
+  background-color: var(--background-color);
+}
+
+/* ===================================== 
+    3. MEDIA QUERIES. 
+===================================== */
+@media (max-width:1400px) {
+/* ==== SPACING. ==== */
+.spacing-xxl {
+  margin-top: var(--normal-spacing);
+}
+
+.spacing-center-xxl {
+  margin: var(--normal-center-spacing) 0px;
+}
+
+}
+
+@media (max-width:1200px) {
+  .container {
+    max-width: 95%;
+  }
+
+  /* ==== SPACING. ==== */
+  .spacing-xl {
+    margin-top: var(--normal-spacing);
+  }
+
+  .spacing-center-xl {
+    margin: var(--normal-center-spacing) 0px;
+  }
+
+  .spacing-xl-mt-3,
+  .spacing-xl-my-3 {
+    margin-top: 1.5rem !important;
+  }
+
+}
+
+/* ===================================== 
+    4. TYPOGRAPHY. 
+===================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--base-font);
+  font-weight: 700;
+  color: var(--headline-color);
+}
+
+h1 {
+  font-size: 45px;
+  line-height: 50px;
+}
+
+h2 {
+  font-size: 35px;
+  line-height: 42px;
+}
+
+h3 {
+  font-size: 25px;
+  line-height: 35px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+p {
+  font-family: var(--secundary-font);
+  margin: 0 0 15px;
+  font-size: var(--paragraph-font-size);
+  color: var(--paragraph-color);
+}
+
+h6 a {
+  font-size: 14px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+li{
+  font-family: var(--base-font);
+}
+
+h5.overheadline{
+  color: var(--secundary-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+
+
+@media (max-width:991px) {
+  /* ==== TYPOGRAPHY. ==== */
+  h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  h6 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+   /* ==== GRID ORDER. ==== */
+  .order-first {
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
+  .order-last {
+    -ms-flex-order: 13;
+    order: 13;
+  }
+
+  .order-md-12 {
+    -ms-flex-order: 6;
+    order: 6;
+  }
+
+  .order-first {
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
+  .order-last {
+    -ms-flex-order: 13;
+    order: 13;
+  }
+
+  /* ==== SPACING. ==== */
+  .spacing-lg {
+    margin-top: var(--normal-spacing);
+  }
+
+  .spacing-center-lg {
+    margin: var(--normal-center-spacing);
+  }
+
+  .spacing-center-lg-60 {
+    margin: var(--normal-center-spacing-60);
+  }
+
+  .spacing-center-lg-80 {
+    margin: var(--normal-center-spacing-80);
+  }
+
+  .spacing-box-lg, .spacing-box-md{
+    margin-top: 3rem;
+  }
+
+  .spacing-lg-mt-3,
+  .spacing-lg-my-3 {
+    margin-top: 1.5rem !important;
+  }
+
+}
+
+@media (max-width:767px) {
+
+  /* ==== SPACING. ==== */
+  .spacing-md {
+    margin-top: var(--normal-spacing);
+  }
+
+  .spacing-center-md {
+    margin: var(--normal-center-spacing) 0px;
+  }
+
+  .spacing-box-lg, .spacing-box-md, .spacing-box-sm{
+    margin-top: 3rem;
+  }
+
+  .mt-5,
+  .my-5 {
+    margin-top: 4rem !important;
+  }
+
+  .mb-5,
+  .my-5 {
+    margin-bottom: 4rem !important;
+  }
+
+  .spacing-md-mt-3,
+  .spacing-md-my-3 {
+    margin-top: 1.5rem !important;
+  }
+
+  .spacing-md-mt-4,
+  .spacing-md-mt-4 {
+    margin-top: 4rem !important;
+  }
+
+}
+
+@media (max-width:576px) {
+ 
+  /* ==== SPACING. ==== */
+ .spacing-sm {
+    margin-top: var(--normal-spacing);
+  }
+
+  .spacing-center-sm {
+    margin: var(--normal-center-spacing) 0px;
+  }
+
+  .spacing-sm-mt-3,
+  .spacing-sm-my-3 {
+    margin-top: 1.5rem !important;
+  }
+
+}
+
+@media (max-width:480px) {
+
+ /* ==== SPACING. ==== */
+  .spacing-xs {
+    margin-top: var(--normal-spacing);
+  }
+
+  .spacing-center-xs {
+    margin: var(--normal-center-spacing) 0px;
+  }
+
+  .mt-5,
+  .my-5 {
+    margin-top: 3rem !important;
+  }
+
+  .mb-5,
+  .my-5 {
+    margin-bottom: 3rem !important;
+  }
+
+}
+
+@media (max-width:380px) {}
+

@@ -1,0 +1,696 @@
+/* ===================================== 
+    FONTS. 
+===================================== */
+
+
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+    --primary-color: var(--fitness-primary);
+    --secundary-color: var(--fitness-secundary);
+    --headline-color: var(--fitness-headline-color);
+    --paragraph-color: var();
+    --background-color: var();
+
+    /* ----- TYPOGRAPHY. ----- */
+    --base-font: 'Montserrat', sans-serif;
+    --secundary-font: 'Montserrat', sans-serif;
+    --paragraph-font-size: 15px;
+}
+
+/* ========== HEADER COLOR RESET ========== */
+ul.top-contact li a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.social-list li a:hover {
+    color: var(--primary-color);
+}
+
+.top-social .btn-default:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+    border-color: none;
+}
+
+/* ========== FOOTER COLOR RESET ========== */
+.footer-terms a:hover{
+    color: var(--primary-color);
+}
+
+.footer-copyright p a:hover{
+    color: var(--primary-color);
+}
+
+ul.quick-links li a:hover{
+    color: var(--primary-color);
+}
+  
+ul.footer-contact li a:hover{
+    color: var(--primary-color);
+}
+
+ul.footer-social li a:hover{
+    color: var(--primary-color);
+}
+
+.cd-top {
+    background: var(--primary-color) url(../../../images/icons/cd-top-arrow.svg) no-repeat center 50%;
+}
+
+/* ===================================== 
+    FITNESS. 
+===================================== */
+.home-slider {
+    width: 100%;
+    height: 850px;
+    position: relative;
+    z-index: 0;
+}
+
+.hero-slider {
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+}
+
+.hero-slider .carousel-cell {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider-caption {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #FFF;
+    text-align: center;
+}
+
+.slider-caption .subtitle {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: var(--travel-third);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.slider-caption h1 {
+    font-size: 60px;
+    line-height: 70px;
+    color: #FFF;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hero-slider .flickity-prev-next-button {
+    display: none;
+}
+
+.hero-slider .flickity-prev-next-button:hover {
+    background: transparent;
+}
+
+.hero-slider .flickity-prev-next-button .arrow {
+    fill: white;
+}
+
+.hero-slider .flickity-page-dots {
+    top: 40%;
+    left: 150px;
+    z-index: 0;
+    width: 20px;
+}
+
+.hero-slider .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: rgba(255, 255, 255);
+    border: 2px solid white;
+    border-radius: 50%;
+    display: block;
+    margin: 15px 0px;
+}
+
+.hero-slider .flickity-page-dots .dot.is-selected {
+    background: var(--travel-third);
+    border: 2px solid var(--travel-third);
+}
+
+.dot-hide .flickity-page-dots .dot {
+    display: none;
+}
+
+.social-media {
+    position: absolute;
+    top: 25%;
+    right: 30px;
+    z-index: 2 !important;
+}
+
+.social-media ul li {
+    margin: 50px 30px;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.social-media ul li a {
+    color: #FFF;
+}
+
+.social-media ul li a:hover {
+    color: var(--base-color);
+}
+
+/* ========== FITNESS CAROUSEL ========== */
+.fitness-carousel {
+    position: relative;
+}
+
+.fitness-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.fitness-carousel .owl-carousel .item {
+    margin: 10px;
+}
+
+.fitness-carousel .owl-dots {
+    display: none;
+}
+
+.fitness-carousel .owl-dots button.owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--owl-dots);
+    margin: 0 3px;
+    box-shadow: none;
+    border: none;
+}
+
+.fitness-carousel .owl-dots button.owl-dot.active {
+    background-color: var(--primary-color);
+    width: 20px;
+    border-radius: 25px;
+}
+
+.fitness-carousel .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.fitness-card-caption {
+    padding: 20px 0px;
+}
+
+.fitness-card-caption h3 {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.fitness-card-caption h3 a {
+    color: var(--headline-color);
+}
+
+.fitness-card-caption p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 0px;
+}
+
+.fitness-card-thumb {
+    position: relative;
+}
+
+.fc-badge {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FFF;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.fc-bagde-icon {
+    width: 30px;
+}
+
+
+.center-title span {
+    color: var(--primary-color);
+}
+
+/* ========== VIDEO PARALLAX ========== */
+.video-parallax {
+    background-image: url("../../../images/commons/home-niches/fitness2/fitness5.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.video-parallax:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, var(--headline-color), var(--headline-color));
+    opacity: 0.4;
+}
+
+.video-parallax .play-icon {
+    width: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.video-parallax .popup-youtube {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: translate(0%, 0%);
+    text-align: center;
+}
+
+/* ========== GALLERY GRID ========== */
+.tp-gallery-grid {
+    position: relative;
+}
+
+.tp-back-rectangle {
+    width: 150px;
+    height: 150px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.tp-gallery-grid:hover .tp-back-rectangle {
+    width: 200px;
+    height: 202px;
+}
+
+.gg-thumb {
+    position: relative;
+    z-index: 2;
+}
+
+.tp-gg-caption {
+    background-color: #FFF;
+    max-width: 300px;
+    padding: 25px;
+    margin-top: -50px;
+    position: relative;
+    z-index: 2;
+}
+
+.tp-gg-caption h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.tp-gg-caption h4 a {
+    color: var(--headline-color);
+}
+
+.tp-gg-caption p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 0px;
+}
+
+h6.tp-gym-learn-more {
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+h6.tp-gym-learn-more a {
+    color: var(--headline-color);
+    text-transform: none;
+    text-decoration: none;
+}
+
+h6.tp-gym-learn-more::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f061";
+    margin-left: 15px;
+}
+
+.image-hover figure {
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.image-hover figure.tp-gym-thumb:hover+span {
+    bottom: -36px;
+    opacity: 1;
+}
+
+/* Zoom In #1 */
+.zoom-in .zoom-thumb {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+.zoom-in:hover .zoom-thumb {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/* ========== TEAM CAROUSEL ========== */
+.team-carousel {
+    position: relative;
+}
+
+.team-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.team-carousel .owl-carousel .item .tp-gym-trainer {
+    margin: auto 10px;
+}
+
+.team-carousel .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.team-carousel .owl-dots button.owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--owl-dots);
+    margin: 0 3px;
+    box-shadow: none;
+    border: none;
+}
+
+.team-carousel .owl-dots button.owl-dot.active {
+    background-color: var(--primary-color);
+    width: 20px;
+    border-radius: 25px;
+}
+
+.team-carousel .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.tp-gym-trainer {
+    position: relative;
+}
+
+.gt-caption {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(232, 145, 75, 0.6);
+    width: 300px;
+    padding: 30px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.tp-gym-trainer:hover .gt-caption {
+    background-color: var(--primary-color);
+}
+
+.gt-caption h4 {
+    color: #FFF;
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.gt-caption p {
+    color: #FFF;
+    margin-bottom: 0px;
+}
+
+/* ========== SOCIAL ICONS ========== */
+.trainer-social ul li {
+    display: inline-block;
+    margin-right: 10px;
+    color: #FFF;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    width: auto;
+    height: auto;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    margin: 0px 10px;
+}
+
+.trainer-social ul li a {
+    color: #FFF;
+}
+
+.trainer-social ul li:hover {
+    background-color: none !important;
+}
+
+.trainer-social ul li:hover .fab {
+    color: #FFF;
+}
+
+/* ========== COUNTER PARALLAX ========== */
+.tp-counter-parallax {
+    background-image: url("../../../images/commons/home-niches/fitness2/fitness6.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.tp-counter-content {
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 650px;
+}
+
+h5.overheading {
+    color: var(--primary-color);
+}
+
+.tp-counter-content h2 {
+    color: #FFFFFF;
+}
+
+.tp-counter-content p {
+    color: #FFFFFF;
+    margin: 20px 0px 35px;
+}
+
+.tp1-counter-box {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.mo-counter {
+    display: flex !important;
+}
+
+.mo-counter-thumb {
+    width: 50px;
+    flex-shrink: 0 !important;
+}
+
+.tp-cb-caption {
+    margin-left: 1rem;
+}
+
+.tp-cb-caption .counter {
+    font-family: var(--base-font);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--headline-color);
+    margin-bottom: 0px;
+}
+
+.tp-cb-caption p {
+    font-size: 10px;
+    line-height: 1.3;
+    color: var(--paragraph-color);
+    margin: 0px;
+}
+
+.moc-center {
+    align-items: center !important;
+}
+
+/* ========== NEWS BLOG ========== */
+.tp1-bn-caption {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.tp1-bottom-caption {
+    background-color: #fff;
+}
+
+.tp1-bn-caption h5 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1200px) {
+    .hero-slider .flickity-page-dots {
+        display: none;
+    }
+
+    .social-media {
+        position: absolute;
+        top: 62%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .social-media ul li {
+        margin: 10px 20px;
+        font-size: 20px;
+        z-index: 2;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .slider-caption h1 {
+        font-size: 45px;
+        line-height: 55px;
+        color: #FFF;
+        text-transform: uppercase;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .hero-box {
+        margin-top: 5rem;
+    }
+
+}
+
+@media (max-width:991px) {
+    .social-media ul li {
+        margin: 0px 15px;
+        font-size: 18px;
+    }
+
+    .slider-caption h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .slider-caption .subtitle {
+        font-size: 14px;
+    }
+
+    .home-slider {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .hero-slider {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .tablet-mt-4 {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width:767px) {
+    .tp-counter-parallax {
+        height: 100%;
+        padding: 60px 0px;
+    }
+
+    .tp-counter-content {
+        margin: 0px;
+        position: relative;
+        top: auto;
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        max-width: 100%;
+    }
+
+    .tp1-counter-box {
+        padding: 10px;
+        width: 200px;
+        margin: 5px 0px;
+    }
+
+    .mobile-mt-4 {
+        margin-top: 4rem;
+    }
+
+}
+
+@media (max-width:576px) {}
+
+@media (max-width:480px) {
+    .social-media ul li {
+        margin: 0px 10px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:380px) {
+    .social-media ul li {
+        margin: 0px 5px;
+        font-size: 16px;
+    }
+
+    .gt-caption {
+        width: 100%;
+        padding: 30px;
+        border-radius: 0px;
+    }
+
+}

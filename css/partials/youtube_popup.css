@@ -1,0 +1,139 @@
+/* =====================================
+    1. YOUTUBE POPUP.
+===================================== */
+.popup-youtube{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+  }
+  
+  .popup-youtube .video-image {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .popup-youtube .video-image img {
+    width: 100%
+  }
+  
+  .popup-youtube .video-image:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    /* background: transparent url(../../images/icons/play-button.png) center center no-repeat; */
+  }
+  
+  .popup-youtube .video-image img a:link {
+    text-decoration: none;
+    color: #FFF;
+  }
+  
+  .popup-youtube .video-image img a:visited {
+    text-decoration: none;
+    color: #FFF;
+  }
+  
+  .popup-youtube .video-image img a:hover {
+    text-decoration: none;
+    color: #FFF;
+  }
+  
+  .popup-youtube .video-image img a:active {
+    text-decoration: none;
+    color: #FFF;
+  }
+  
+  /* ===================================== 
+      2. MODAL POPUP. 
+  ===================================== */
+  .modal-box {
+    text-align: center;
+  }
+  
+  .modal-box p {
+    margin: 15px 0px 15px 0px;
+  }
+  
+  .modal-sm .modal-content {
+    background: #FFF;
+    border: 1px solid #ddd;
+    border: 1px solid rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    padding: 10px 20px 10px 20px;
+  }
+  
+  .close {
+    color: #000;
+  }
+  
+  @media (min-width: 992px) {
+    .modal-md {
+      width: 600px;
+    }
+  }
+  
+  /* .btn-popup {
+    display: inline-block;
+    margin-left: 5rem;
+    margin-top: -10px;
+  } */
+  
+  .popup-youtube {
+    position: relative;
+  }
+  
+  .pulse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: var(--secundary-color);
+    width: 70px;
+    height: 70px;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 73px;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    padding-left: 4px;
+  }
+  
+  .pulse::before,
+  .pulse::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid var(--secundary-color);
+    top: -15px;
+    right: -15px;
+    left: -15px;
+    bottom: -15px;
+    animation: pulse 1.5s linear infinite;
+  }
+  
+  .pulse::after {
+    animation-delay: .5s;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.2);
+      opacity: 0;
+    }
+  }
+  

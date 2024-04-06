@@ -1,0 +1,536 @@
+/* ===================================== 
+    FONTS. 
+===================================== */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&amp;display=swap');
+
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+    --primary-color: var(--beauty-primary);
+    --secundary-color: var(--beauty-secundary);
+    --headline-color: var(--beauty-headline-color);
+    --paragraph-color: var();
+    --background-color: var();
+
+    /* ----- TYPOGRAPHY. ----- */
+    --base-font: 'Lato', sans-serif;
+    --secundary-font: 'Montserrat', sans-serif;
+    --paragraph-font-size: 15px;
+    --theme-font: 'Niconne', cursive;
+}
+
+h5.overheadline {
+    font-family: var(--theme-font);
+    color: var(--primary-color);
+    font-size: 30px !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+}
+
+/* ===================================== 
+    BEAUTY. 
+===================================== */
+
+/* ========== BUTTONS ========== */
+.beauty-content-layer .tp-btn-primary {
+    color: var(--primary-color);
+    background-color: #FFF;
+    border: solid 1px #FFF;
+    border-radius: 50rem !important;
+    font-size: 14px;
+}
+
+.beauty-content-layer .tp-btn-primary:hover {
+    color: #FFF;
+    background-color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+    border-radius: 50rem !important;
+}
+
+.tp-btn-primary {
+    border-radius: 50rem !important;
+}
+
+/* ========== CAROUSEL ========== */
+.beauty-carousel {
+    position: relative;
+}
+
+.beauty-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.beauty-carousel .owl-carousel .item .beauty-feature-box {
+    margin: auto 15px;
+}
+
+.beauty-carousel .owl-dots {
+    display: none;
+}
+
+.beauty-feat-caption h5 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+
+.beauty-feat-caption p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 0px;
+}
+
+.tp-bf-icon {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+/* ========== STORY SECTION ========== */
+.beauty-story-bg {
+    background-image: url("../../../images/commons/home-niches/beauty/beauty-1.jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.beauty-content-layer {
+    height: 400px;
+    background-color: var(--secundary-color);
+    margin: 50px 0 0 -50px;
+    position: relative;
+}
+
+.inner-bc {
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 50px;
+}
+
+.inner-bc h3 {
+    color: #FFF;
+}
+
+.inner-bc p {
+    color: #FFF;
+}
+
+.inner-bc .tp-btn-primary {
+    margin-top: 15px;
+}
+
+.inner-bc h5.overheadline {
+    color: #FFF;
+}
+
+/* ========== SERVICES ========== */
+.beauty-services-carousel {
+    position: relative;
+}
+
+.beauty-services-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.beauty-services-carousel .owl-carousel .item .beauty-services {
+    margin: 10px;
+}
+
+.beauty-services-carousel .owl-dots {
+    display: none;
+}
+
+.bs-circle {
+    background-color: var(--primary-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+}
+
+.bs-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 35px;
+}
+
+.bs-caption {
+    text-align: center;
+    margin-top: 15px;
+    padding: 0px 20px;
+}
+
+.bs-caption h4 {
+    font-size: 18px;
+}
+
+.bs-caption p {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+/* ========== PARALLAX ========== */
+.beauty-parallax {
+    background-image: url("../../../images/commons/home-niches/beauty/beauty-2.jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.beauty-parallax:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, var(--secundary-color), var(--secundary-color));
+    opacity: 0.6;
+}
+
+.beauty-parallax-content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.beauty-parallax-content h2 {
+    color: #FFF;
+    font-family: var(--theme-font);
+    font-size: 55px !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.beauty-parallax-content p {
+    color: #FFF;
+}
+
+/* ========== PULSING BTN ========== */
+.pulse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: var(--primary-color);
+    width: 70px;
+    height: 70px;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    padding-left: 4px;
+}
+
+.pulse::before,
+.pulse::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    top: -15px;
+    right: -15px;
+    left: -15px;
+    bottom: -15px;
+    animation: pulse 1.5s linear infinite;
+}
+
+.pulse::after {
+    animation-delay: .5s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+.popup-youtube {
+    position: relative;
+    top: -50px;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    transform: none;
+    text-align: center;
+}
+
+
+/* ========== CENTER TESTIMONIALS ========== */
+.center-testimonial-carousel {
+    position: relative;
+}
+
+.center-testimonial-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.center-testimonial-carousel .owl-carousel .item .tp-card-center {
+    margin: 50px 10px 10px;
+}
+
+.center-testimonial-carousel .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.center-testimonial-carousel .owl-dots button.owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--owl-dots);
+    margin: 0 3px;
+    box-shadow: none;
+    border: none;
+}
+
+.center-testimonial-carousel .owl-dots button.owl-dot.active {
+    background-color: var(--primary-color);
+    width: 20px;
+    border-radius: 25px;
+}
+
+.center-testimonial-carousel .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.center-testimonial-card .tp-avatar {
+    width: 80px;
+    margin: auto;
+    border: solid 2px var(--primary-color);
+    border-radius: 50%;
+}
+
+.center-testimonial-card .tp-testimonial-content {
+    font-size: 18px;
+    font-style: italic;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.testimonial-author {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.autor-profession {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 0px;
+}
+
+/* ========== PRICING TABLE ========== */
+.tp-spa-pricing {
+    background-image: url("../../../images/commons/home-niches/beauty/facial.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.tp-spa-pricing:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #5d2236, var(--primary-color));
+    opacity: 0.6;
+}
+
+.tp-spa-center {
+    background-image: url("../../../images/commons/home-niches/beauty/spa-2.jpg");
+}
+
+.tp-spa-center:before {
+    background-image: linear-gradient(to bottom right, #6F0096, #b467e4);
+    opacity: 0.6;
+}
+
+.tp-spa-right {
+    background-image: url("../../../images/commons/home-niches/beauty/facial-3.jpg");
+}
+
+.tp-spa-right:before {
+    background-image: linear-gradient(to bottom right, #5d2236, var(--primary-color));
+    opacity: 0.6;
+}
+
+.inner-spa-pricing {
+    text-align: center;
+    color: #FFF;
+    padding: 35px 0px 35px 0px;
+    position: relative;
+    z-index: 2;
+}
+
+.inner-spa-pricing h4 {
+    padding-top: 20px;
+    opacity: none;
+    color: #FFF;
+}
+
+.inner-spa-pricing h3 {
+    font-size: 60px;
+    margin: 20px 0px 20px 0px;
+    color: #FFF;
+}
+
+.inner-spa-pricing span-montly {
+    font-size: 25px;
+}
+
+.inner-spa-pricing p {
+    line-height: 2;
+    font-size: 16px;
+}
+
+.inner-spa-pricing ul li {
+    color: #FFF;
+    line-height: 35px;
+}
+
+.inner-spa-pricing .tp-btn-primary {
+    margin-top: 25px;
+}
+
+/* ========== GRID GALLERY ========== */
+.grid-four-col .grid-sizer,
+.grid-four-col .grid-box {
+    width: 25%;
+}
+
+.grid-box {
+    padding: 0px;
+}
+
+/* ========== NEWS CAROUSEL ========== */
+.tp1-bn-caption {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.tp1-bottom-caption {
+    background-color: #fff;
+}
+
+/* ========== TEAM ========== */
+ul.social-links li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+ul.social-links li a {
+    color: var(--primary-color);
+}
+
+ul.social-links li a:hover {
+    color: var(--secundary-color) !important;
+}
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1200px) {}
+
+@media (max-width:991px) {
+    .beauty-content-layer {
+        height: auto;
+        background-color: var(--secundary-color);
+        margin: 0px;
+        position: relative;
+    }
+
+    .inner-bc {
+        margin: 0px;
+        position: relative;
+        top: auto;
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        padding: 50px 30px;
+    }
+
+    .tp-spa-pricing {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .grid-four-col .grid-sizer,
+    .grid-four-col .grid-box {
+        width: 50%;
+    }
+
+
+
+}
+
+@media (max-width:767px) {
+
+    .beauty-parallax {
+        height: 100%;
+    }
+
+    .beauty-parallax-content {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: translate(0%, 0%);
+        text-align: center;
+        padding: 100px 0px 80px;
+    }
+
+    .beauty-parallax-content h2 {
+        margin-top: 70px;
+    }
+
+    .popup-youtube {
+        top: auto;
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .grid-four-col .grid-sizer,
+    .grid-four-col .grid-box {
+        width: 100%;
+    }
+
+    .center-testimonial-card .tp-testimonial-content {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:480px) {}

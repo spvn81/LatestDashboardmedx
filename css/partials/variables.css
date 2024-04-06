@@ -1,0 +1,140 @@
+/* =====================================
+    1. TEMPLATE VARIABLES.
+===================================== */
+:root {
+    /* ----- COLOR PALETTE. ----- */
+    --primary-color: #FF404C;
+    --secundary-color: #01b3e4;
+    --headline-color: #022731; 
+    --dark-color: #333333;
+    --paragraph-color: #808080;
+    --background-color: #F9FAFB;
+    --body-color: #FFFFFF;
+    --owl-dots: #f0f2f5;
+    --border-color: rgb(224, 228, 235, 0.7);
+    --soft-gray: #b3b3b3;
+    --light-gray: #f5f4f2;
+ 
+    --footer-background: var(--dark-color);
+    --button-background: var(--primary-color);
+    --primary-hover: var(--primary-color);
+    --secundary-hover: var(--secundary-color);
+     
+    /* ----- TYPOGRAPHY. ----- */
+    --base-font: 'Open Sans', sans-serif;
+    --secundary-font: 'Montserrat', sans-serif;
+    --paragraph-font-size: 15px;
+     
+    /* ----- SPACING. ----- */
+    --normal-spacing: 50px;
+    --normal-center-spacing: 30px 0px;
+    --normal-center-spacing-60: 60px 0px;
+    --normal-center-spacing-80: 80px 0px;
+
+    --normal-right-padding: 80px;
+    --normal-left-padding: 80px;
+    --normal-right-margin: 50px;
+    --normal-left-margin: 50px;
+
+    /* ----- YOGA COLOR PALETTE. ----- */
+    --yoga-primary: #5fb6de;
+    --yoga-secundary: #47b8a1;
+    --yoga-headline: #000;
+    --yoga-paragraph-color: #808080;
+    --yoga-background-color: #FBE9F1;
+
+    /* ----- GYM COLOR PALETTE. ----- */
+    --gym-primary: #FC2F1D;
+    --gym-soft-primary: #FC4736;
+    --gym-secundary: #f27405;
+    /* --gym-headline: #000; */
+    --gym-paragraph-color: #808080;
+    --gym-background-color: #FBE9F1;
+
+    /* ----- BEAUTY COLOR PALETTE. ----- */
+    --beauty-primary: #F05295;
+    --beauty-secundary: #b467e4;
+    --beauty-headline-color: #222; 
+
+    /* ----- CONSTRUCTION COLOR PALETTE. ----- */
+    --construction-primary: #FFBB02;
+    --construction-secundary: #000;
+
+    /* ----- CORPORATE COLOR PALETTE. ----- */
+    --corporate-primary: #15A9FA;
+    --corporate-secundary: #092a48;
+
+    /* ----- CARGO COLOR PALETTE. ----- */
+    --cargo-primary: #FC4C02;
+    --cargo-secundary: #1D428A;
+
+    /* ----- DEALER COLOR PALETTE. ----- */
+    --dealer-primary: #CC0023;
+    --dealer-secundary: #333333;
+
+    /* ----- DENTAL COLOR PALETTE. ----- */
+    --dental-primary: #283B6A;
+    --dental-secundary: #21CDC0;
+
+    /* ----- EDUCATION COLOR PALETTE. ----- */
+    --education-primary: #FDC735;
+    --education-secundary: #FFB606;
+    --education-headline-color: #022731; 
+
+    /* ----- DENTAL COLOR PALETTE. ----- */
+    --medical-primary: #283B6A;
+    --medical-secundary: #21CDC0;
+
+    /* ----- CHARITY COLOR PALETTE. ----- */
+    --charity-primary: #FA5F05;
+    --charity-secundary: #000000;
+
+    /* ----- CLEANING COLOR PALETTE. ----- */
+    --cleaning-primary: #01B3E4;
+    --cleaning-headline-color: #033b4a; 
+
+    /* ----- FINANCE COLOR PALETTE. ----- */
+    --finance-primary: #9BC53D;
+    --finance-secundary: #092a48;
+
+    /* ----- INDUSTRIAL COLOR PALETTE. ----- */
+    --industrial-primary: #F2AB26;
+    --industrial-secundary: #F0542D;
+    --industrial-headline-secundary: #2B2D42;
+    --industrial-paragraph-color: #020202;
+
+    /* ----- PORTFOLIO COLOR PALETTE. ----- */
+    --portfolio-primary: #E6A100;
+    --portfolio-secundary: #26292E;
+
+    /* ----- TRAVEL COLOR PALETTE. ----- */
+    --travel-primary: #2485B0;
+    --travel-secundary: #2A9D8F;
+    --travel-third: #E9C46A;
+
+    /* ----- LAWYER COLOR PALETTE. ----- */
+    --lawyer-primary: #978651;
+    --lawyer-secundary: #000000;
+    --lawyer-headline-color: #000000;
+
+    /* ----- FARM COLOR PALETTE. ----- */
+    --farm-primary: #EEC344;
+    --farm-secundary: #46866C;
+
+    /* ----- ORGANIC COLOR PALETTE. ----- */
+    --organic-primary: #DE7900;
+    --organic-secundary: #46866C;
+    --organic-headline-color: #000000;
+    --organic-background-color: #f5f4ef;
+
+    /* ----- FITNESS COLOR PALETTE. ----- */
+    --fitness-primary: #E8914B;
+    --fitness-secundary: #000000;
+    --fitness-headline-color: #000000;
+
+    /* ----- PROFILE 3 COLOR PALETTE. ----- */
+    --profile-primary: #E6A100;
+    --profile-secundary: #26292E;
+
+  }
+

@@ -1,0 +1,180 @@
+
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+    --primary-color: var();
+    --secundary-color: var();   
+    --headline-color: var();
+    --paragraph-color: var();
+    --background-color: var();
+}
+
+/* ===================================== 
+    AGENCY. 
+===================================== */
+
+/* ========== COLORS RESET ========== */
+.bg-wrapper{
+    background-color: var(--primary-color);
+}
+
+.bg-wrapper h2, .bg-wrapper p{
+    color: #FFF;
+}
+
+/* ========== ABOUT US ========== */
+.agency-about{
+    padding: 0px 30px 0 0;
+}
+
+.agency-about p{
+    margin: 15px 0px 25px;
+}
+
+.agency-services-box{
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.agency-sb-icon{
+    width: 50px;
+}
+
+.agency-sb-caption h4{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.agency-sb-caption p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0px;
+}
+
+.agency-ws-left{
+    background-image: url("../../../images/commons/home-niches/agency/agency-1.jpg");
+    height: 450px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.agency-ws-content{
+    padding-left: 50px;
+}
+
+.agency-ws-bullet-layer{
+    margin-top: 20px;
+}
+
+.list-bullets{
+    margin: 20px 0px;
+}
+
+.list-bullets h5::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    content: "\f560";
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.list-bullets p{
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 0px;
+    padding-left: 25px;
+}
+
+/* ========== TESTIMONIALS ========== */
+
+.testimonial-carousel {
+    position: relative;
+}
+
+.testimonial-carousel .owl-theme .custom-nav {
+    display: none;
+}
+.testimonial-carousel .owl-carousel .item .tp-card-center{
+    margin: 50px 10px 10px;
+}
+
+.testimonial-carousel .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.testimonial-carousel .owl-dots button.owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--owl-dots);
+    margin: 0 3px;
+    box-shadow: none;
+    border: none;
+}
+
+.testimonial-carousel .owl-dots button.owl-dot.active {
+    background-color: var(--primary-color);
+    width: 20px;
+    border-radius: 25px;
+}
+
+.testimonial-carousel .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.tp-card-center ul.rating-stars{
+    margin-top: 15px;
+    color: var(--secundary-color);
+}
+
+/* ========== PRICING TABLE ========== */
+
+.shadow-pricing-table {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    padding-bottom: 1.5rem;
+    background-color: #FFF;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+  }
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1200px) {
+    .agency-ws-content{
+        padding-left: 0px;
+    }
+
+    .agency-services-box{
+        padding: 20px;
+        margin: 15px 0px;
+        border-radius: 10px;
+    }
+
+    .agency-about{
+        padding: 0px;
+    }
+}
+
+@media (max-width:991px) {
+
+}
+@media (max-width:767px) {
+    
+}
+@media (max-width:576px) {
+
+}
+@media (max-width:480px) {
+
+}

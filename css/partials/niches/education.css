@@ -1,0 +1,564 @@
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+    --primary-color: var(--education-primary);
+    --secundary-color: var(--education-secundary);
+    --headline-color: var(--education-headline-color);
+    --paragraph-color: var();
+    --background-color: var();
+}
+
+/* ===================================== 
+    EDUCATION. 
+===================================== */
+
+/* ========== SLIDER REVOLUTION ========== */
+.soundcloudwrapper iframe {
+    width: 100% !important
+}
+
+.news-header .tp-tab-title {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    margin-bottom: 5px;
+    width: 350px;
+    display: block;
+    letter-spacing: 1px;
+}
+
+.news-header .tp-tab-desc {
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffcc00;
+    line-height: 25px;
+    font-family: "Roboto";
+}
+
+/* ========== ABOUT US ========== */
+
+.about-left {
+    padding: 0px 50px 0px 0px;
+}
+
+.about-left h5.overheadline {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.about-right {
+    position: relative;
+}
+
+.bullets-list {
+    margin-top: 10px;
+}
+
+.bullets-list li {
+    margin: 15px 0px;
+}
+
+.bullets-list li::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f192";
+    color: var(--primary-color);
+    margin-right: 15px;
+}
+
+.ar-img-center {
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.ar-img-bottom {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 300px;
+    border-top: solid 20px #FFFFFF;
+    border-left: solid 20px #FFFFFF;
+}
+
+/* ========== EDUCATIONS CLASS ========== */
+.class-card {
+    -webkit-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    -moz-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    background-color: #FFFFFF;
+    margin: 15px 0px;
+}
+
+.class-thumb {
+    position: relative;
+}
+
+.class-card-overlay {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.media-object-card {
+    display: flex !important;
+    padding: 5px 15px;
+}
+
+.moc-thumbnail {
+    width: 70px;
+    flex-shrink: 0 !important;
+}
+
+.moc-caption {
+    margin-left: 1rem;
+    padding-right: 30px;
+}
+
+.moc-caption h4 {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+.moc-center {
+    align-items: center !important;
+}
+
+.class-caption {
+    text-align: center;
+    padding: 30px 25px;
+}
+
+.class-caption p {
+    margin: 0 0 30px;
+}
+
+.class-btns .btn-class-price,
+.btn-class-join {
+    width: 150px;
+    padding: 7px 15px;
+    border-radius: 0px;
+    margin: 0px;
+}
+
+.class-btns .btn-class-price {
+    background-color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+    color: var(--headline-color);
+    font-weight: 700;
+}
+
+.class-btns .btn-class-price:hover {
+    background-color: var(--headline-color);
+    border: solid 1px var(--headline-color);
+}
+
+.class-btns .btn-class-join {
+    background-color: var(--secundary-color);
+    border: solid 1px var(--secundary-color);
+    color: var(--headline-color);
+    font-weight: 700;
+}
+
+.class-btns .btn-class-join:hover {
+    background-color: var(--headline-color);
+    border: solid 1px var(--headline-color);
+}
+
+.class-btns a {
+    margin: 0px;
+}
+
+/* ========== TEAM CAROUSEL ========== */
+.teachers-carousel {
+    position: relative;
+}
+
+.teachers-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.teachers-carousel .owl-carousel .item {
+    margin: 10px;
+}
+
+.teachers-carousel .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.teachers-carousel .owl-dots button.owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--owl-dots);
+    margin: 0 3px;
+    box-shadow: none;
+    border: none;
+}
+
+.teachers-carousel .owl-dots button.owl-dot.active {
+    background-color: var(--primary-color);
+    width: 20px;
+    border-radius: 25px;
+}
+
+.teachers-carousel .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+/* ========== TEAM CAROUSEL CARD STYLES ========== */
+.tc-v1-portrait {
+    position: relative;
+    overflow: hidden;
+}
+
+.tc-v1-portrait .tc-v1-caption {
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    bottom: 0px;
+    padding: 15px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.tc-v1-portrait:hover .tc-v1-caption {
+    height: 140px;
+}
+
+.tc-v1-caption h3 {
+    color: #FFF;
+    margin-bottom: 0px;
+}
+
+.tc-v1-caption p {
+    color: #FFF;
+    margin-bottom: 0px;
+}
+
+.tc-v1-portrait ul.team-social li {
+    display: inherit;
+    display: inline-block;
+    margin: 15px 5px 0px;
+}
+
+ul.team-social li a {
+    font-size: 18px;
+    color: var(--secundary-color);
+}
+
+/* ========== COUNTER PARALLAX ========== */
+.tp-counter-parallax {
+    background-image: url("../../../images/commons/home-niches/education/img33.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.tp-counter-content {
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 600px;
+}
+
+.tp-counter-content h5 {
+    color: var(--headline-color);
+}
+
+.tp-counter-content h2 {
+    color: var(--headline-color);
+}
+
+.tp-counter-content p {
+    color: var(--headline-color);
+    margin: 20px 0px 35px;
+}
+
+.tp1-counter-box {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.mo-counter {
+    display: flex !important;
+}
+
+.mo-counter-thumb {
+    width: 60px;
+    flex-shrink: 0 !important;
+}
+
+.tp-cb-caption {
+    margin-left: 1rem;
+}
+
+.tp-cb-caption .counter {
+    font-family: var(--base-font);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--headline-color);
+    margin-bottom: 0px;
+}
+
+.tp-cb-caption p {
+    font-size: 10px;
+    line-height: 1.3;
+    color: var(--paragraph-color);
+    margin: 0px;
+}
+
+.moc-center {
+    align-items: center !important;
+}
+
+
+/* ========== PARTNERS ========== */
+.bottom-bar {
+    background-color: var(--primary-color);
+    padding: 30px 0px;
+}
+
+.education-partners {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.education-partners h6 {
+    margin: 15px 0px 0;
+}
+
+.education-partners .partner-logo {
+    width: 50px;
+    margin: auto;
+}
+
+/* ========== NEWS ========== */
+.news-card-carousel {
+    position: relative;
+}
+
+.news-card-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.news-card-carousel .owl-carousel .item {
+    margin: 10px;
+}
+
+.news-card-carousel .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.news-card-carousel .owl-dots button.owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--background-color);
+    margin: 0 3px;
+    box-shadow: none;
+    border: none;
+}
+
+.news-card-carousel .owl-dots button.owl-dot.active {
+    background-color: var(--primary-color);
+    width: 20px;
+    border-radius: 25px;
+}
+
+.news-card-carousel .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.nc-date {
+    background-color: var(--primary-color);
+    height: 60px;
+    padding: 8px 0px;
+}
+
+.nc-date h4,
+.nc-date p {
+    color: var(--headline-color);
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.nc-date p {
+    font-size: 14px;
+    margin-top: -2px;
+    font-weight: 500;
+}
+
+.nc-comment {
+    background-color: var(--primary-color);
+    height: 60px;
+    padding: 8px 0px;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.nc-comment .fas {
+    font-size: 20px;
+    color: var(--headline-color);
+}
+
+.nc-comment p {
+    color: var(--headline-color);
+    font-size: 14px;
+    text-align: center;
+    margin: -3px 0 0px;
+}
+
+.nc-right-layer {
+    padding-top: 15px;
+}
+
+.nc-right-layer h3 {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.nc-right-layer h3 a {
+    color: var(--headline-color);
+}
+
+.nc-right-layer p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1200px) {
+    .class-card-overlay {
+        height: 70px;
+        padding: 5px 0px;
+    }
+
+    .moc-thumbnail {
+        width: 50px;
+    }
+
+    .moc-caption {
+        padding-right: 15px;
+    }
+
+    .media-object-card {
+        padding: 5px 10px;
+    }
+
+    .moc-caption h4 {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width:991px) {}
+
+@media (max-width:767px) {
+
+    .about-left {
+        padding: 0px;
+    }
+
+    .tp-counter-parallax {
+        height: 100%;
+        padding: 60px 0px;
+    }
+
+    .tp-counter-content {
+        margin: 0px;
+        position: relative;
+        top: auto;
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        max-width: 100%;
+    }
+
+    .tp1-counter-box {
+        padding: 10px;
+        width: 200px;
+        margin: 5px 0px;
+    }
+
+    .bottom-list {
+        margin-top: -15px;
+    }
+}
+
+@media (max-width:576px) {
+    .news-card-caption .nc-left-layer {
+        display: none;
+    }
+}
+
+@media (max-width:480px) {
+    .ar-img-bottom {
+        position: relative;
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+        border: none;
+    }
+
+    .ar-img-center {
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+
+    .media-object-card {
+        display: block !important;
+    }
+
+    .class-card-overlay {
+        height: auto;
+        padding: 10px 0px;
+    }
+
+    .moc-thumbnail {
+        width: 50px;
+        margin: auto;
+    }
+
+    .moc-caption {
+        margin: 0px;
+        text-align: center;
+        padding: 0px 15px;
+    }
+}
+
+@media (max-width:380px) {
+    .class-card-overlay {
+        position: relative;
+        background-color: #000000;
+        height: auto;
+        padding: 10px 0px;
+    }
+
+    .moc-caption h4 {
+        font-size: 16px;
+        line-height: 22px;
+
+    }
+}

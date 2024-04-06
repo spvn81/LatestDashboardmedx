@@ -1,0 +1,300 @@
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+    --primary-color: var(--lawyer-primary);
+    --secundary-color: var(--lawyer-secundary);
+    --headline-color: var(--lawyer-headline-color);
+    --paragraph-color: var();
+    --background-color: var();
+}
+
+/* ========== HEADER COLOR RESET ========== */
+ul.top-contact li a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.social-list li a:hover {
+    color: var(--primary-color);
+}
+
+.top-social .btn-default:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+    border-color: none;
+}
+  
+
+/* ========== FOOTER COLOR RESET ========== */
+.footer-terms a:hover{
+    color: var(--primary-color);
+}
+
+.footer-copyright p a:hover{
+    color: var(--primary-color);
+}
+
+ul.quick-links li a:hover{
+    color: var(--primary-color);
+}
+  
+ul.footer-contact li a:hover{
+    color: var(--primary-color);
+}
+
+ul.footer-social li a:hover{
+    color: var(--primary-color);
+}
+
+.cd-top {
+    background: var(--primary-color) url(../../../images/icons/cd-top-arrow.svg) no-repeat center 50%;
+}
+
+/* ===================================== 
+    LAWYER. 
+===================================== */
+
+/* ========== ABOUT US ========== */
+.about-services {
+    margin-top: 30px;
+}
+
+h5.overheadline {
+    color: var(--lawyer-primary);
+}
+
+.lawyer-about-icon {
+    width: 50px;
+}
+
+.about-service-box h4 {
+    font-size: 18px;
+    margin: 15px 0px 10px;
+}
+
+.about-service-box p {
+    font-size: 13px;
+    line-height: 24px;
+}
+
+/* ========== COUNTER PARALLAX ========== */
+.tp-counter-parallax {
+    background-image: url("../../../images/commons/home-niches/lawyer/law11.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.tp-counter-content {
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 600px;
+}
+
+.tp-counter-content h2 {
+    color: #FFFFFF
+}
+
+.tp-counter-content p {
+    color: #FFFFFF;
+    margin: 20px 0px 35px;
+}
+
+.tp1-counter-box {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.tp1-counter-box {
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+.mo-counter {
+    display: flex !important;
+}
+
+.mo-counter-thumb {
+    width: 50px;
+    flex-shrink: 0 !important;
+}
+
+.tp-cb-caption {
+    margin-left: 1rem;
+}
+
+.tp-cb-caption .counter {
+    font-family: var(--base-font);
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFF;
+    margin-bottom: 0px;
+}
+
+.tp-cb-caption p {
+    font-size: 10px;
+    color: #FFF;
+    margin: 0px;
+}
+
+.moc-center {
+    align-items: center !important;
+}
+
+/* ========== TEAM SLIDER ========== */
+.aside-team-carousel {
+    position: relative;
+}
+
+.aside-team-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.aside-team-carousel .owl-carousel .item {
+    margin: 10px;
+}
+
+.aside-team-carousel .owl-dots {
+    display: none;
+}
+
+.aside-team-carousel .owl-dots button.owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--owl-dots);
+    margin: 0 3px;
+    box-shadow: none;
+    border: none;
+}
+
+.aside-team-carousel .owl-dots button.owl-dot.active {
+    background-color: var(--primary-color);
+    width: 20px;
+    border-radius: 25px;
+}
+
+.aside-team-carousel .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.about-team {
+    padding: 30px 0px;
+}
+
+.lawyer-caption {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.lawyer-caption h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* ========== PARALLAX SERVICES ========== */
+
+.parallax-serivces {
+    background-image: url("../../../images/commons/home-niches/lawyer/law18.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 50px 0px;
+}
+
+.lawyer-services-box {
+    text-align: center;
+    padding: 0px 15px;
+    margin: 30px 0px;
+}
+
+.lawyer-service-icon {
+    width: 60px;
+    margin: auto;
+}
+
+.lawyer-services-box h4 {
+    margin: 10px 0px;
+}
+
+.lawyer-services-box p {
+    font-size: 14px;
+}
+
+
+/* ========== ABOUT US ========== */
+.about-left {
+    padding: 30px 50px 0px 0px;
+}
+
+.signature {
+    width: 210px;
+    margin-top: 25px;
+}
+
+/* ========== HOME CONTACT ========== */
+.tp-contact1-parallax {
+    background-image: url("../../../images/commons/home-niches/lawyer/law5.html");
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.tp-contact1-parallax:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, var(--secundary-color), var(--secundary-color));
+    opacity: 0.7;
+    z-index: 1;
+}
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1200px) {}
+
+@media (max-width:991px) {
+    .about-left {
+        padding: 0px;
+    }
+}
+
+@media (max-width:767px) {
+    .tp-counter-parallax {
+        height: 100%;
+        padding: 60px 0px;
+    }
+
+    .tp-counter-content {
+        margin: 0px;
+        position: relative;
+        top: auto;
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        max-width: 100%;
+    }
+
+    .tp1-counter-box {
+        padding: 10px;
+        width: 200px;
+        margin: 5px 0px;
+    }
+}
+
+@media (max-width:576px) {}
+
+@media (max-width:480px) {}

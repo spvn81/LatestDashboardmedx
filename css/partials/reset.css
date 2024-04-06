@@ -1,0 +1,98 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #9dabaf;
+  background-color: var(--body-color);
+  letter-spacing: 0px;
+  font-family: var(--base-font);
+}
+
+strong {
+  font-weight: bold;
+}
+
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+iframe {
+  width: 100%;
+  border: none;
+  display: block;
+}
+
+img {
+  width: 100%;
+}
+
+*::-moz-selection {
+  background: var(--primary-color);
+  color: #fff;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--primary-color);
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--primary-color);
+  color: #fff;
+  text-shadow: none;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secundary-color);
+  text-decoration: none;
+}
+
+.no-dots .owl-dots {
+  display: none;
+}
+
+  @media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1140px !important;
+    }
+  }
+

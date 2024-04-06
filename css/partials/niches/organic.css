@@ -1,0 +1,532 @@
+/* ===================================== 
+    FONTS. 
+===================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&amp;family=Barlow:wght@300;400;700&amp;display=swap');
+
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+  --primary-color: var(--organic-primary);
+  --secundary-color: var(--organic-secundary);
+  --headline-color: var(--organic-headline-color);
+  --paragraph-color: var();
+  --background-color: var(--organic-background-color);
+
+  /* ----- TYPOGRAPHY. ----- */
+  --base-font: 'Aleo', serif;
+  --secundary-font: 'Barlow', sans-serif;
+  --paragraph-font-size: 15px;
+}
+
+/* ========== NAVBAR COLOR RESET ========== */
+.nav-menu > li > a:hover {
+  color: var(--secundary-color) !important;
+}
+
+.nav-menu > li:hover > a .submenu-indicator-chevron,
+.nav-menu > .active > a .submenu-indicator-chevron,
+.nav-menu > .focus > a .submenu-indicator-chevron {
+  border-color: transparent var(--secundary-color) var(--secundary-color) transparent;
+}
+
+
+/* ===================================== 
+    ORGANIC. 
+===================================== */
+
+/* =====================================
+    1. SLIDER.
+===================================== */
+.home-slider {
+  width: 100%;
+  height: 850px;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-slider {
+  width: 100%;
+  height: 850px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.hero-slider .carousel-cell {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slider-caption {
+  position: relative;
+  top: 58%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #FFF;
+  text-align: left;
+}
+
+.slider-caption .subtitle {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 10px;
+  color: var(--secundary-color);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.slider-caption h1 {
+  font-size: 60px;
+  line-height: 70px;
+  width: 80%;
+  color: var(--headline-color);
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.slider-caption p {
+  width: 50%;
+  color: var(--headline-color);
+  font-size: 18px;
+  line-height: 32px;
+  margin: 15px 0px 25px 0px;
+}
+
+.slider-caption .tp-btn-primary {
+  background-color: var(--secundary-color);
+  border: solid 2px var(--secundary-color);
+  color: #FFFFFF;
+  padding: 10px 40px;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.slider-caption .tp-btn-primary:hover {
+  background-color: var(--primary-color);
+  border: solid 2px var(--primary-color);
+  color: #FFF;
+  padding: 10px 40px;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.hero-slider .flickity-prev-next-button {
+  display: none;
+}
+
+.hero-slider .flickity-prev-next-button:hover {
+  background: transparent;
+}
+
+.hero-slider .flickity-prev-next-button .arrow {
+  fill: white;
+}
+
+.hero-slider .flickity-page-dots {
+  display: none;
+}
+
+.hero-slider .flickity-page-dots .dot {
+  width: 25px;
+  height: 3px;
+  opacity: 1;
+  background: rgba(255, 255, 255);
+  border: 0px solid white;
+  border-radius: 0%;
+  display: block;
+  margin: 20px 0px;
+}
+
+.hero-slider .flickity-page-dots .dot.is-selected {
+  width: 35px;
+  background: var(--primary-color);
+  border: 0px solid var(--primary-color);
+}
+
+.dot-hide .flickity-page-dots .dot {
+  display: none;
+}
+
+.social-media {
+  position: absolute;
+  top: 25%;
+  right: 30px;
+  z-index: 2 !important;
+}
+
+.social-media ul li {
+  margin: 50px 30px;
+  font-size: 20px;
+  z-index: 2;
+}
+
+.social-media ul li a {
+  color: #FFF;
+}
+
+.social-media ul li a:hover {
+  color: var(--secundary-color);
+}
+
+/* ========== 1. TOP HEADER. ========== */
+.top-header {
+  background: transparent;
+  height: 60px;
+  clear: both;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 0;
+  width: 100%;
+  transition: 0.6s ease-in;
+  padding: 15px;
+  color: var(--headline-color) !important;
+}
+
+ul.top-contact li {
+  font-size: 14px;
+  margin-bottom: 0px;
+  font-family: var(--base-font);
+}
+
+ul.top-contact li a {
+  color: var(--headline-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul.top-contact li a:hover {
+  color: var(--secundary-color);
+  text-decoration: none;
+}
+
+.social-list li a {
+  color: var(--headline-color);
+  transition: 0.4s;
+}
+
+.social-list li a:hover {
+  color: var(--secundary-color);
+}
+
+/* ========== NAVBAR CUSTOM ========== */
+.nav-menu>li>a {
+  font-family: var(--base-font);
+  font-weight: 400;
+  height: 70px;
+  padding: 26px 15px;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--headline-color);
+  -webkit-transition: color 0.3s, background 0.3s;
+  transition: color 0.3s, background 0.3s;
+}
+
+.submenu-indicator-chevron {
+  height: 6px;
+  width: 6px;
+  display: block;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: transparent var(--headline-color) var(--headline-color) transparent;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
+  margin-top: -4px !important;
+}
+
+/* ========== PRODUCT ========== */
+.organic-product-cart {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #F5F4EF;
+}
+
+.organic-product-caption {
+  text-align: center;
+  padding: 20px 15px;
+}
+
+.organic-product-caption h3 {
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.organic-product-caption h5 {
+  color: var(--primary-color);
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+/* ========== WHAT WE OFFER ========== */
+.organic-icon {
+  width: 35px;
+}
+
+.organic-service-box h4 {
+  font-size: 18px;
+}
+
+.organic-service-box p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 0px;
+}
+
+/* ========== TEAM ========== */
+.team-card-box {
+  background-color: #F9FAFB;
+  padding: 25px;
+}
+
+.team-carousel-2 .owl-dots {
+  display: none;
+}
+
+.team-caption p.profession {
+  color: var(--primary-color);
+}
+
+/* ========== PARALLAX COUNTER ========== */
+.tp-counter-parallax {
+  background-image: url("../../../images/commons/home-niches/organic/organic-bg.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.tp-counter-content {
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  max-width: 600px;
+}
+
+.tp-counter-content h5 {
+  color: var(--headline-color);
+}
+
+.tp-counter-content h2 {
+  color: var(--headline-color);
+}
+
+.tp-counter-content p {
+  color: var(--headline-color);
+  margin: 20px 0px 35px;
+}
+
+.tp1-counter-box {
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.mo-counter {
+  display: flex !important;
+}
+
+.mo-counter-thumb {
+  width: 60px;
+  flex-shrink: 0 !important;
+}
+
+.tp-cb-caption {
+  margin-left: 1rem;
+}
+
+.tp-cb-caption .counter {
+  font-family: var(--base-font);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--headline-color);
+  margin-bottom: 0px;
+}
+
+.tp-cb-caption p {
+  font-size: 10px;
+  color: var(--paragraph-color);
+  margin: 0px;
+}
+
+.moc-center {
+  align-items: center !important;
+}
+
+/* ========== CENTER TESTIMONIALS ========== */
+.corporate-center-testimonial {
+  margin-top: -50px;
+  padding-top: 7.5rem;
+}
+
+.center-testimonial-carousel {
+  position: relative;
+}
+
+.center-testimonial-carousel .owl-theme .custom-nav {
+  display: none;
+}
+
+.center-testimonial-carousel .owl-carousel .item .tp-card-center {
+  margin: 50px 10px 10px;
+}
+
+.center-testimonial-carousel .owl-dots {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.center-testimonial-carousel .owl-dots button.owl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  background: var(--background-color);
+  margin: 0 3px;
+  box-shadow: none;
+  border: none;
+}
+
+.center-testimonial-carousel .owl-dots button.owl-dot.active {
+  background-color: var(--primary-color);
+  width: 20px;
+  border-radius: 25px;
+}
+
+.center-testimonial-carousel .owl-dots button.owl-dot:focus {
+  outline: none;
+}
+
+.center-testimonial-card .tp-avatar {
+  width: 80px;
+  margin: auto;
+}
+
+.center-testimonial-card .tp-testimonial-content {
+  font-size: 18px;
+  font-style: italic;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.testimonial-author {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.autor-profession {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/**  Call To Action **/
+.call-action-wrapper {
+  background-color: var(--primary-color);
+  padding: 50px 0px;
+}
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1200px) {}
+
+@media (max-width:991px) {
+
+  .slider-caption {
+    top: 50%;
+  }
+
+
+  .slider-caption .subtitle {
+    letter-spacing: 5px;
+  }
+
+  .slider-caption h1 {
+    font-size: 45px;
+    line-height: 55px;
+    width: 90%;
+  }
+
+  .slider-caption p {
+    width: 80%;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width:767px) {
+  .tp-counter-parallax {
+    height: 100%;
+    padding: 60px 0px;
+  }
+
+  .tp-counter-content {
+    margin: 0px;
+    position: relative;
+    top: auto;
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    max-width: 100%;
+  }
+
+  .tp1-counter-box {
+    padding: 10px;
+    width: 200px;
+    margin: 5px 0px;
+  }
+
+}
+
+@media (max-width:576px) {
+  .center-testimonial-card .tp-testimonial-content {
+    font-size: 16px;
+  }
+
+  .slider-caption .subtitle {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .slider-caption h1 {
+    font-size: 35px;
+    line-height: 45px;
+    width: 100%;
+  }
+
+  .slider-caption p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .social-media {
+    display: none;
+  }
+
+}
+
+@media (max-width:480px) {}

@@ -1,0 +1,168 @@
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+    --primary-color: var(--yoga-primary);
+    --secundary-color: var(--yoga-secundary);
+    --headline-color: var(--yoga-headline);
+    --paragraph-color: var(--yoga-paragraph-color);
+    --background-color: var(--yoga-background-color);
+}
+
+/* ===================================== 
+    YOGA. 
+===================================== */
+
+/* ========== #ICON BOXES STYLE 3 ========== */
+.yoga-about-left {
+    padding-right: 80px;
+}
+
+.yoga-about-left h2 {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.yoga-about-left h2 span {
+    color: var(--yoga-primary);
+}
+
+.yoga-about-right .tp-btn-primary {
+    margin-top: 20px;
+}
+
+/* ========== YOGA SERVICES ========== */
+.yoga-card {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    padding: 5px;
+    margin: 15px 0px;
+}
+
+.yc-caption {
+    background-color: #FFFFFF;
+    padding: 25px 15px 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 0px 0px rgba(0,0,0,0.23);
+}
+
+.yc-caption h5 {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    color: var(--primary-color);
+}
+
+.yc-caption h3 {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 0px;
+}
+
+.yc-caption h3 a {
+    color: var(--headline-color);
+}
+
+.yc-caption .bottom-card {
+    margin-top: 15px;
+}
+
+.yc-caption .bottom-card .bc-left p::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f017";
+    margin-right: 7px;
+    color: var(--primary-color);
+}
+
+.yc-caption .bottom-card .bc-left p {
+    font-size: 13px;
+    color: var(--headline-color);
+    margin-bottom: 0px;
+}
+
+.yc-caption .bottom-card .bc-right p::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+    margin-right: 7px;
+    color: var(--primary-color);
+}
+
+.yc-caption .bottom-card .bc-right p {
+    font-size: 13px;
+    color: var(--headline-color);
+    margin-bottom: 0px;
+    text-align: right;
+}
+
+.yc-avatar {
+    width: 50px;
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
+}
+
+.yc-avatar img {
+    border-radius: 50%;
+    border: solid 2px #FFFFFF;
+}
+
+.yc-feature-img {
+    position: relative;
+}
+
+.yc-thumbnail img {
+    border-radius: 5px;
+}
+
+/* ========== NEWS CAROUSEL ========== */
+.tp1-bn-caption {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.tp1-bottom-caption {
+    background-color: #fff;
+}
+
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1200px) {}
+
+@media (max-width:991px) {
+    .tp-card-extra-spacing {
+        margin: 90px auto !important;
+    }
+
+    .tp-card-extra-margin {
+        margin-top: 90px;
+    }
+
+    .tp-card {
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
+@media (max-width:767px) {
+    .yoga-about-left {
+        padding-right: 0px;
+    }
+
+    .yoga-about-left h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+}
+
+@media (max-width:576px) {
+    .yoga-about-left h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width:480px) {}

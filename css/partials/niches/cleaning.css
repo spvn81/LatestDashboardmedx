@@ -1,0 +1,390 @@
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+    --primary-color: var(--cleaning-primary);
+    --secundary-color: var();
+    --headline-color: var(--cleaning-headline-color);
+    --paragraph-color: var();
+    --background-color: var();
+}
+
+/* ===================================== 
+    NAME. 
+===================================== */
+/* ========== SERVICES ========== */
+.front-carousel-alt {
+    position: relative;
+    z-index: 0;
+}
+
+.front-carousel-alt .owl-theme .custom-nav {
+    display: none;
+}
+
+.front-carousel-alt .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.front-carousel-alt .owl-dots button.owl-dot {
+    display: none;
+}
+
+.box-layer {
+    background-color: var(--secundary-color);
+    margin: 0px 15px;
+    padding: 25px 15px 30px;
+}
+
+.bl-icon {
+    width: 50px;
+    margin: auto;
+}
+
+.box-layer h4 {
+    color: #FFF;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.box-layer p {
+    color: #FFF;
+    font-size: 13px;
+    text-align: center;
+    line-height: 18px;
+    margin-bottom: 0px;
+}
+
+/* ========== ABOUT US ========== */
+.about-left {
+    padding: 30px 50px 0px 0px;
+}
+
+.about-left h5.overheadline {
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.about-left .tp-btn-primary {
+    margin-top: 20px;
+}
+
+.span-more-options {
+    margin-top: 40px;
+    width: 400px;
+}
+
+.span-more-options .signature {
+    width: 120px;
+}
+
+.phone-contat-layer h4 a {
+    color: var(--headline-color);
+}
+
+.phone-contat-layer h6 {
+    text-transform: uppercase;
+    color: var(--paragraph-color);
+}
+
+/* ========== CLEANING WIDE SECTION ========== */
+.ws-left-img-side {
+    background-image: url("../../../images/commons/home-niches/cleaning/slider1.jpg");
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.ws-right-content-side {
+    height: 550px;
+    background-color: var(--primary-color);
+    margin: 50px 0 0 -120px;
+    position: relative;
+}
+
+.ws-right-content-box {
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 80px;
+    width: 70%;
+}
+
+.ws-right-content-box h5,
+.ws-right-content-box h2,
+.ws-right-content-box p {
+    color: #FFF;
+}
+
+.ws-right-content-box h5.overheadline {
+    text-transform: uppercase;
+    color: var(--headline-color);
+}
+
+.span-ws-layer {
+    margin-top: 30px;
+}
+
+.span-ws-layer .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.ha-icon {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+/* ========== CENTER TESTIMONIALS ========== */
+.corporate-center-testimonial {
+    margin-top: -50px;
+    padding-top: 7.5rem;
+}
+
+.center-testimonial-carousel {
+    position: relative;
+}
+
+.center-testimonial-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.center-testimonial-carousel .owl-carousel .item .tp-card-center {
+    margin: 50px 10px 10px;
+}
+
+.center-testimonial-carousel .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.center-testimonial-carousel .owl-dots button.owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--owl-dots);
+    margin: 0 3px;
+    box-shadow: none;
+    border: none;
+}
+
+.center-testimonial-carousel .owl-dots button.owl-dot.active {
+    background-color: var(--primary-color);
+    width: 20px;
+    border-radius: 25px;
+}
+
+.center-testimonial-carousel .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.center-testimonial-card .tp-avatar {
+    width: 80px;
+    margin: auto;
+}
+
+.center-testimonial-card .tp-testimonial-content {
+    font-size: 18px;
+    font-style: italic;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.testimonial-author {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.autor-profession {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+/**  Call To Action **/
+.call-action-wrapper {
+    background-color: var(--primary-color);
+    padding: 50px 0px;
+}
+
+/* ========== TEAM CAROUSEL ========== */
+.cleaning-team-carousel {
+    position: relative;
+}
+
+.cleaning-team-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.cleaning-team-carousel .owl-carousel .item {
+    margin: 10px;
+}
+
+.cleaning-team-carousel .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.cleaning-team-carousel .owl-dots button.owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--owl-dots);
+    margin: 0 3px;
+    box-shadow: none;
+    border: none;
+}
+
+.cleaning-team-carousel .owl-dots button.owl-dot.active {
+    background-color: var(--primary-color);
+    width: 20px;
+    border-radius: 25px;
+}
+
+.cleaning-team-carousel .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+/* ========== TEAM CAROUSEL CARD STYLES ========== */
+.tc-v1-portrait {
+    position: relative;
+    overflow: hidden;
+}
+
+.tc-v1-portrait .tc-v1-caption {
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.6);
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    bottom: 0px;
+    padding: 15px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.tc-v1-portrait:hover .tc-v1-caption {
+    height: 140px;
+}
+
+.tc-v1-caption h3 {
+    color: #FFF;
+    margin-bottom: 0px;
+}
+
+.tc-v1-caption p {
+    color: #FFF;
+    margin-bottom: 0px;
+}
+
+.tc-v1-portrait ul.team-social li {
+    display: inherit;
+    display: inline-block;
+    margin: 15px 5px 0px;
+}
+
+ul.team-social li a {
+    font-size: 18px;
+    color: var(--secundary-color);
+}
+
+/* ========== HOME CONTACT ========== */
+.tp-contact1-parallax {
+    background-image: url("../../../images/commons/home-niches/cleaning/washla-2.jpg");
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.tp-contact1-parallax:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, var(--headline-color), var(--headline-color));
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1200px) {}
+
+@media (max-width:991px) {
+    .about-left {
+        padding: 0px;
+    }
+
+    .ws-left-img-side {
+        height: 300px;
+    }
+
+    .ws-right-content-side {
+        height: auto;
+        background-color: var(--primary-color);
+        padding: 0px;
+        position: relative;
+        margin: 0px;
+    }
+
+    .ws-right-content-box {
+        margin: 0px;
+        position: relative;
+        top: auto;
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        left: 0px;
+        width: 100%;
+        padding: 50px 30px;
+    }
+
+    .cp-content-side {
+        display: none;
+    }
+
+}
+
+@media (max-width:767px) {
+    .ws-box-bottom {
+        margin-top: 20px;
+        ;
+    }
+}
+
+@media (max-width:576px) {
+    .span-more-options {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .phone-contat-layer {
+        margin-top: 20px;
+    }
+
+    .center-testimonial-card .tp-testimonial-content {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width:480px) {}

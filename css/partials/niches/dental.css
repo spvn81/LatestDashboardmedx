@@ -1,0 +1,579 @@
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+    --primary-color: var(--dental-primary);
+    --secundary-color: var(--dental-secundary);
+    --headline-color: var();
+    --paragraph-color: var();
+    --background-color: var();
+}
+
+/* ===================================== 
+    DENTAL. 
+===================================== */
+
+/* ========== FRONT BOXES ========== */
+.dental-front-layers {
+    margin-top: -120px;
+    z-index: 0;
+    position: relative;
+}
+
+.dental-box {
+    padding: 40px 30px;
+    height: 260px;
+}
+
+.db-left {
+    background-color: var(--secundary-color);
+}
+
+.db-center {
+    background-color: #314881;
+}
+
+.db-right {
+    background-color: var(--primary-color);
+}
+
+.dental-box h5 {
+    font-size: 18px;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.moc-thumbnail {
+    width: 50px;
+}
+
+.moc-caption h4 {
+    font-size: 18px;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.moc-caption p {
+    color: #FFF;
+    font-size: 14px;
+    margin-bottom: 0px;
+    line-height: 20px;
+}
+
+.phone-call-layer {
+    margin: 30px 0px 0px 60px;
+}
+
+.phone-call-layer .tp-media-object {
+    display: flex !important;
+}
+
+.phone-call-layer .tp-media-object .tp-media-icon {
+    width: 50px;
+}
+
+.phone-call-layer .tp-media-object h5 {
+    margin-bottom: 0px;
+}
+
+.phone-call-layer .tp-media-caption {
+    margin-left: 10px;
+}
+
+.phone-call-layer .tp-media-caption a {
+    color: #FFF;
+    font-size: 14px;
+}
+
+.schedule-layer {
+    margin-top: 10px;
+}
+
+.schedule-layer .list-group {
+    margin-top: -4px;
+}
+
+.schedule-layer .list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 0px;
+    color: #FFF;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+    border-radius: 0px;
+    font-size: 13px;
+}
+
+.no-border {
+    border-bottom: none !important;
+    padding-bottom: 0px !important;
+}
+
+.schedule-layer .list-group-item .badge {
+    font-size: 13px;
+    font-family: var(--base-font);
+    font-weight: normal;
+    background-color: transparent !important
+}
+
+.sl-heading {
+    clear: both;
+    margin-bottom: 7px;
+}
+
+.sl-heading h5 {
+    font-size: 18px;
+    color: #FFF;
+}
+
+.sl-heading-icon {
+    width: 50px;
+    float: left;
+    margin-right: 15px;
+}
+
+.dental-box .btn-layer {
+    margin: 30px 0px 0px 60px;
+}
+
+.btn-layer .tp-btn-primary {
+    background-color: transparent;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+}
+
+.btn-layer .tp-btn-primary:hover {
+    color: var(--primary-color) !important;
+    background-color: #FFF;
+    border: solid 1px #FFF;
+}
+
+/* ========== CAROUSEL ========== */
+.dental-carousel {
+    position: relative;
+}
+
+.dental-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.dental-carousel .owl-carousel .item {
+    margin: 20px 10px;
+}
+
+.dental-carousel .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.dental-carousel .owl-dots button.owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--owl-dots);
+    margin: 0 3px;
+    box-shadow: none;
+    border: none;
+}
+
+.dental-carousel .owl-dots button.owl-dot.active {
+    background-color: var(--primary-color);
+    width: 20px;
+    border-radius: 25px;
+}
+
+.dental-carousel .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.services-card {
+    -webkit-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    -moz-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    background-color: #FFF;
+    padding: 25px 25px 35px;
+}
+
+.sc-thumbnail {
+    margin-top: -50px;
+}
+
+.services-card .sc-circle-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid 4px #FFF;
+    position: relative;
+    margin: -35px auto;
+    background-color: var(--primary-color);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.services-card:hover .sc-circle-icon {
+    background-color: var(--secundary-color);
+}
+
+.sc-icon-center {
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.sc-caption {
+    margin-top: 50px;
+    text-align: center;
+    padding: 0px 15px;
+}
+
+.sc-caption .tp-btn-primary {
+    margin-top: 15px;
+    color: var(--primary-color);
+    background-color: #FFF;
+    border: solid var(--primary-color);
+}
+
+.sc-caption .tp-btn-primary:hover {
+    margin-top: 15px;
+    color: #FFF;
+    background-color: var(--secundary-color);
+    border: solid var(--secundary-color);
+}
+
+/* ========== WIDE SECTION ========== */
+.ws-bg-layer {
+    background-image: url("../../../images/commons/home-niches/dental/img64.jpg");
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 100px 0px;
+}
+
+.ws-bg-layer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, var(--primary-color), var(--primary-color));
+    opacity: 0.95;
+}
+
+/* ========== COUNTER ========== */
+.dental-counter-layer {
+    position: relative;
+    z-index: 1;
+}
+
+.dental-counter-box .tp-media-object {
+    display: flex !important;
+}
+
+.dental-counter-box .tp-media-object .tp-media-img {
+    width: 60px;
+}
+
+.tp-media-object h5 {
+    margin-bottom: 5px;
+}
+
+.dental-counter-box .tp-media-caption {
+    margin-left: 1rem;
+}
+
+.dental-counter-box .tp-media-caption .counter {
+    color: #FFF;
+}
+
+.dental-counter-box .tp-media-caption p {
+    color: #FFF;
+}
+
+/* ========== ABOUT ========== */
+.ws-about-layer {
+    position: relative;
+    z-index: 1;
+}
+
+.ws-about-layer-left {
+    margin-top: 50px;
+}
+
+.ws-about-layer-left h5.overheadline {
+    font-weight: 400;
+    color: var(--secundary-color);
+    text-transform: uppercase;
+}
+
+.ws-about-layer-left h2,
+.ws-about-layer-left h5,
+.ws-about-layer-left p {
+    color: #FFF;
+}
+
+.ws-about-layer-left .tp-btn-primary {
+    background-color: var(--secundary-color);
+    border: solid 1px var(--secundary-color);
+    color: #FFF;
+    margin-top: 30px;
+}
+
+.ws-about-layer-left .tp-btn-primary:hover {
+    background-color: transparent;
+    border: solid 1px #FFF;
+    color: #FFF;
+    margin-top: 30px;
+}
+
+.ws-about-layer-right {
+    background-image: url("../../../images/commons/home-niches/dental/staff14.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 100px 0px;
+}
+
+/* ========== TEAM ========== */
+.team-card-box {
+    background-color: #FFF;
+    -webkit-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    -moz-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+}
+
+.team-carousel-2 {
+    position: relative;
+}
+
+.team-carousel-3 .owl-theme .custom-nav {
+    display: none;
+}
+
+.team-carousel-2 .owl-dots {
+    display: none;
+}
+
+/* ========== PARALLAX ========== */
+.dental-parallax-ws {
+    background-image: url("../../../images/commons/home-niches/dental/img65.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.dental-parallax-ws:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, var(--primary-heading), var(--primary-heading));
+    opacity: 0.4;
+}
+
+.parallax-label {
+    background-color: #FFF;
+    border-left: solid 5px #3AB3DF;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 600px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgb(204 204 204 / 60%);
+    -moz-box-shadow: 0 0 10px rgba(204, 204, 204, 0.6);
+    -webkit-box-shadow: 0 0 10px rgb(204 204 204 / 60%);
+    -o-box-shadow: 0 0 10px rgba(204, 204, 204, 0.6);
+}
+
+.parallax-label p {
+    margin: 10px 0px 25px;
+}
+
+/* ========== NEWS CAROUSEL ========== */
+.news-carousel {
+    position: relative;
+}
+
+.news-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.news-carousel .owl-carousel .item .news-box {
+    margin: auto 10px;
+}
+
+.news-carousel .owl-dots {
+    display: none;
+}
+
+.nb-thumb {
+    position: relative;
+    z-index: 1;
+}
+
+.nb-avatar {
+    width: 50px !important;
+    border-radius: 50%;
+}
+
+.nb-caption {
+    width: 250px;
+    padding: 15px;
+    margin-top: -60px;
+    background-color: #FFF;
+    z-index: 10;
+    position: relative;
+    border-top-right-radius: 10px;
+}
+
+.nb-caption .moc-caption h4 {
+    font-size: 15px;
+    color: var(--headline-color);
+    margin-bottom: 0px;
+}
+
+.nb-caption .moc-caption p {
+    font-size: 14px;
+    color: var(--paragraph-color);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.nb-caption .flex-grow-1 {
+    padding-top: 3px;
+}
+
+.nb-caption-bottom {
+    margin-top: 25px;
+}
+
+.nb-caption-bottom h4 a {
+    color: var(--headline-color);
+}
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1200px) {}
+
+@media (max-width:991px) {
+    .dental-front-layers {
+        margin-top: 5rem;
+        z-index: 100;
+        position: relative;
+    }
+
+    .dental-box {
+        padding: 40px 30px;
+        height: 100%;
+    }
+
+    .dental-box .btn-layer {
+        margin: 30px 0px 0px 0px;
+    }
+
+
+    .phone-call-layer {
+        margin: 30px 0px 0px 0px;
+    }
+
+    .ws-about-layer-left {
+        margin-top: 0px;
+    }
+
+    .ws-about-layer-right {
+        display: none;
+    }
+
+    .ws-bg-layer {
+        background-image: url("../../../images/commons/home-niches/dental/img64.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 50px 0px;
+    }
+
+    .counter-spacing-md {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width:767px) {
+    .counter-spacing-sm {
+        margin-top: 25px;
+    }
+
+    .parallax-label {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-left: solid 5px #3AB3DF;
+        margin: 0;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        max-width: 600px;
+        padding: 30px;
+    }
+
+    .dental-parallax-ws {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 50px 0px;
+    }
+
+}
+
+@media (max-width:576px) {
+    .nb-caption {
+        display: none;
+    }
+
+    .dental-box .media-object-card{
+        display: block !important;
+    }
+
+
+    .moc-caption{
+        margin-top: 15px;
+    }
+
+}
+
+@media (max-width:480px) {
+    .dental-box .tp-media-object {
+        display: block !important;
+    }
+
+    .dental-box .tp-media-object .tp-media-img {
+        width: 60px;
+        margin: auto auto 15px;
+    }
+
+    .dental-box .tp-media-caption {
+        margin: 15px 0 0 0;
+        text-align: left;
+    }
+}

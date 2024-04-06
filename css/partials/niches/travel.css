@@ -1,0 +1,611 @@
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+    --primary-color: var(--travel-primary);
+    --secundary-color: var(--travel-secundary);   
+    --headline-color: var();
+    --paragraph-color: var();
+    --background-color: var();
+}
+
+/* ===================================== 
+    TRAVEL. 
+===================================== */
+
+/* ========== SLIDER ========== */
+.home-slider {
+    width: 100%;
+    height: 850px;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .hero-slider {
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+  }
+  
+  .hero-slider .carousel-cell {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .slider-caption {
+    position: relative;
+    top: 45%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #FFF;
+    text-align: center;
+  }
+  
+  .slider-caption .subtitle {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: var(--travel-third);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  .slider-caption h1 {
+    font-size: 60px;
+    line-height: 70px;
+    color: #FFF;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .hero-slider .flickity-prev-next-button {
+    display: none;
+  }
+  
+  .hero-slider .flickity-prev-next-button:hover {
+    background: transparent;
+  }
+  
+  .hero-slider .flickity-prev-next-button .arrow {
+    fill: white;
+  }
+  
+  .hero-slider .flickity-page-dots {
+    top: 40%;
+    left: 150px;
+    z-index: 0;
+    width: 20px;
+  }
+  
+  .hero-slider .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: rgba(255, 255, 255);
+    border: 2px solid white;
+    border-radius: 50%;
+    display: block;
+    margin: 15px 0px;
+  }
+  
+  .hero-slider .flickity-page-dots .dot.is-selected {
+    background: var(--travel-third);
+    border: 2px solid var(--travel-third);
+  }
+  
+  .dot-hide .flickity-page-dots .dot {
+    display: none;
+  }
+
+  .social-media {
+    position: absolute;
+    top: 25%;
+    right: 30px;
+    z-index: 2 !important;
+  }
+  
+  .social-media ul li {
+    margin: 50px 30px;
+    font-size: 20px;
+    z-index: 2;
+  }
+  
+  .social-media ul li a {
+    color: #FFF;
+  }
+  
+  .social-media ul li a:hover {
+    color: var(--base-color);
+  }
+
+/* ========== FRONT BOXES ========== */
+.hero-box {
+    margin-top: -223px;
+    z-index: 0;
+    position: relative;
+  }
+  
+  .fb-icon {
+    width: 60px;
+  }
+  
+  .front-box {
+    background: rgba(255,255,255,0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 20px 15px;
+  }
+  
+  .front-box h4 {
+    margin: 15px 0px 5px;
+  }
+  
+  .front-box p {
+    font-size: 14px;
+    color: #000000;
+  }
+
+/* ========== DESTINATION ========== */
+.destination-box {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    margin: 10px 0px;
+  }
+  
+  .destination-box * {
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .destination-box img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  
+  .destination-box figcaption {
+      position: absolute;
+      height: 90px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      overflow: hidden;
+      padding: 15px;
+      background: rgba(36, 133, 176, 0.5);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(36, 133, 176, 0.25);
+  }
+  
+  .destination-box h4 {
+    color: #FFF;
+    margin-bottom: 5px;
+  }
+  
+  .destination-box h5 {
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    color: #bbb;
+    letter-spacing: 1px;
+  }
+  
+  .destination-box blockquote {
+    margin-top: 10px;
+  }
+  
+  .destination-box blockquote p {
+    color: #FFF;
+  }
+  
+  .destination-box a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .destination-box:hover figcaption,
+  .destination-box.hover figcaption {
+    height: calc(75%);
+  }
+  
+  .destination-box ul li {
+    display: inline-block;
+    margin: 3px;
+    font-weight: 600;
+    color: var(--base-color);
+  }
+  
+  .destination-box ul li.rating-number {
+    font-weight: 700;
+  }
+
+/* ========== TESTIMONIALS ========== */
+.testimonials-layer {
+    background-image: url("../../../images/commons/home-niches/travel/destination-8.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0px;
+  }
+  
+  .testimonial-carousel-2 {
+      position: relative;
+      background: rgba(36, 133, 176, 0.5);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(36, 133, 176, 0.25);
+      border-radius: 5px;
+      padding: 50px 20px;
+  }
+  
+  .testimonial-card {
+    padding: 0px;
+  }
+  
+  .testimonial-carousel-2 .owl-theme .custom-nav {
+    display: none;
+  }
+  
+  .testimonial-carousel-2 .owl-dots {
+    display: none;
+  }
+  
+  .testimonial-card {
+    text-align: center;
+  }
+  
+  .testimonial-card h2 {
+    color: #FFF;
+    margin: 20px 0px;
+  }
+  
+  .testimonial-card p {
+    color: #FFF;
+  }
+  
+  .client-avatar {
+    width: 100px;
+    margin: 25px auto;
+  }
+  
+  .client-avatar img {
+    border-radius: 50%;
+    border: solid 5px #FFF;
+  }
+  
+  .quote-icon .fas {
+    font-size: 50px;
+    color: var(--travel-third);
+    text-align: center !important;
+  }
+  
+  .t-caption {
+    margin-top: 15px;
+  }
+  
+  .t-caption h4 {
+    color: #FFF;
+    margin-bottom: 0px;
+  }
+  
+  p.profession {
+    color: var(--travel-third);
+    font-weight: 500;
+    margin-bottom: 0px !important;
+  }
+  
+  p.customer-opinion {
+    width: 70%;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 300;
+    margin: auto auto 20px;
+  }
+
+/* ========== ACTIVITIES ========== */
+.activities-carousel {
+    position: relative;
+  }
+  
+  .activities-carousel .owl-theme .custom-nav {
+    display: none;
+  }
+  
+  .activities-carousel .owl-carousel .item .thumbnail {
+    margin: 0rem 1rem;
+  }
+  
+  .activities-carousel .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .activities-carousel .owl-dots button.owl-dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #e0e9eb;
+    margin: 0 3px;
+    box-shadow: none;
+    border: none;
+  }
+  
+  .activities-carousel .owl-dots button.owl-dot.active {
+    background-color: var(--primary-color);
+    width: 13px;
+    border-radius: 25px;
+  }
+  
+  .activities-carousel .owl-dots button.owl-dot:focus {
+    outline: none;
+  }
+  
+  .activitie-thumb {
+    margin: 0px 15px;
+    position: relative;
+  }
+  
+  .price-layer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #FFF;
+    padding: 5px 20px;
+    z-index: 1;
+  }
+  
+  .price-box h4 {
+    margin-bottom: 0px;
+  }
+  
+  .activitie-info {
+    position: absolute;
+    bottom: 20px;
+    margin: 0px 15px;
+    padding: 20px;
+    width: auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-in-out 0s; 
+      -moz-transition: all 0.3s ease-in-out 0s; 
+      -ms-transition: all 0.3s ease-in-out 0s; 
+      -o-transition: all 0.3s ease-in-out 0s; 
+      transition: all 0.3s ease-in-out 0s; 
+  }
+  
+  .activitie-thumb:hover .activitie-info{
+    bottom: 35px;
+  }
+  
+  .activty-img:hover .activitie-info{
+    bottom: 35px;
+  }
+  
+  .activitie-info h3 {
+    font-size: 45px;
+    margin-right: 10px;
+  }
+  
+  ul.activity-rating {
+    margin-top: -5px;
+  }
+  
+  ul.activity-rating li {
+    display: inline-block;
+    margin: 0px 2px;
+    font-size: 13px;
+    color: var(--primary-color);
+  }
+  
+  p.rating-count {
+    font-size: 13px;
+    margin-top: -5px;
+  }
+  
+  .activitie-info p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+/* ========== PARALLAX ========== */
+.video-parallax{ 
+    background-image: url("../../../images/commons/home-niches/travel/merit-travel-1.jpg");
+    height: 500px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.video-parallax:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, var(--headline-color), var(--headline-color));
+  opacity: 0.4;
+}
+
+.video-parallax .play-icon{
+    width: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.video-parallax .popup-youtube{
+  position: relative; 
+  top: auto; 
+  left: auto; 
+  transform: translate(0%, 0%); 
+  text-align: center; 
+}
+
+
+/* ========== WIDE SECTION ========== */
+.wide-cta{
+    background-color: var(--primary-color);
+    padding: 70px 0px;
+}
+
+.wide-cta-content{
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.wide-cta-content h2{
+    color: #FFFFFF;
+}
+
+.wide-cta-content p{
+    color: #FFFFFF;
+}
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1200px) {
+  .hero-slider .flickity-page-dots {
+    display: none;
+  }
+
+  .social-media {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .social-media ul li {
+    margin: 10px 20px;
+    font-size: 20px;
+    z-index: 2;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .slider-caption h1 {
+    font-size: 45px;
+    line-height: 55px;
+    color: #FFF;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .hero-box {
+    margin-top: 5rem;
+  }
+
+  .front-box {
+    background: rgba(255,255,255);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    border: none;
+    padding: 20px 15px;
+    -webkit-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    -moz-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+  }
+
+  .fb-lg-mt{
+    margin-top: 25px;
+  }
+  
+}
+@media (max-width:991px) {
+  .social-media ul li {
+    margin: 0px 15px;
+    font-size: 18px;
+  }
+
+  .slider-caption h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .slider-caption .subtitle {
+    font-size: 14px;
+  }
+
+  .home-slider {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .hero-slider {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .testimonial-carousel-2 {
+    padding: 30px 0px;
+}
+
+.testimonial-card h2 {
+  color: #FFF;
+  margin: 20px 0px;
+}
+
+.testimonial-card p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.client-avatar {
+  width: 70px;
+  margin: 25px auto 15px;
+}
+
+.client-avatar img {
+  border: solid 3px #FFF;
+}
+}
+
+@media (max-width:767px) {
+  .fb-md-mt{
+    margin-top: 25px;
+  } 
+}
+
+@media (max-width:576px) {
+
+}
+
+@media (max-width:480px) {
+  .social-media ul li {
+    margin: 0px 10px;
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width:380px) {
+  .social-media ul li {
+    margin: 0px 5px;
+    font-size: 16px;
+  }
+}

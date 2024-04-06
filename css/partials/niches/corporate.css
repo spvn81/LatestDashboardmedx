@@ -1,0 +1,465 @@
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+  --primary-color: var(--corporate-primary);
+  --secundary-color: var(--corporate-secundary);
+  --headline-color: var();
+  --paragraph-color: var();
+  --background-color: var();
+}
+
+/* ========== HEADER COLOR RESET ========== */
+ul.top-contact li a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.social-list li a:hover {
+  color: var(--primary-color);
+}
+
+.top-social .btn-default:hover {
+  color: var(--primary-color);
+}
+
+/* ========== FOOTER COLOR RESET ========== */
+.footer-terms a:hover{
+  color: var(--primary-color);
+}
+
+.footer-copyright p a:hover{
+  color: var(--primary-color);
+}
+
+ul.quick-links li a:hover{
+  color: var(--primary-color);
+}
+
+ul.footer-contact li a:hover{
+  color: var(--primary-color);
+}
+
+ul.footer-social li a:hover{
+  color: var(--primary-color);
+}
+
+.cd-top {
+  background: var(--primary-color) url(../../../images/icons/cd-top-arrow.svg) no-repeat center 50%;
+}
+
+/* ===================================== 
+    CORPORATE. 
+===================================== */
+/* ========== CORPORATE ABOUT ========== */
+.corporate-about {
+  padding: 15px 30px 0 0;
+}
+
+.tp-signature {
+  width: 200px;
+  margin-top: 25px;
+}
+
+.corporate-gallery-grid .row .col-md-6 {
+  padding: 10px;
+}
+
+/* ========== CORPORATE SERVICES ========== */
+.serv-box-icon {
+  width: 50px;
+}
+
+.corporate-serv-box {
+  background-color: #F9F9F9;
+  padding: 35px 25px 35px;
+  position: relative;
+}
+
+.corporate-serv-box h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.corporate-serv-box p {
+  margin-bottom: 0px;
+}
+
+.box-number {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+.box-number h4 {
+  font-size: 40px;
+  color: #cccccc;
+}
+
+/* ========== CORPORATE WIDE SECTION ========== */
+.ws-left-img-side {
+  background-image: url("../../../images/commons/home-niches/coportate/corporate-1.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.ws-right-content-side {
+  height: 500px;
+  background-color: var(--primary-color);
+  margin: 50px 0 0 -120px;
+  position: relative;
+}
+
+.ws-right-content-box {
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 80px;
+  width: 70%;
+}
+
+.ws-right-content-box h5,
+.ws-right-content-box h2,
+.ws-right-content-box p {
+  color: #FFF;
+}
+
+.ws-right-content-box h5.overheadline {
+  text-transform: uppercase;
+  color: var(--headline-color);
+}
+
+.span-ws-layer {
+  margin-top: 30px;
+}
+
+.span-ws-layer .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.ha-icon {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+/* ========== CENTER TESTIMONIALS ========== */
+.corporate-center-testimonial {
+  margin-top: -50px;
+  padding-top: 7.5rem;
+}
+
+.center-testimonial-carousel {
+  position: relative;
+}
+
+.center-testimonial-carousel .owl-theme .custom-nav {
+  display: none;
+}
+
+.center-testimonial-carousel .owl-carousel .item .tp-card-center {
+  margin: 50px 10px 10px;
+}
+
+.center-testimonial-carousel .owl-dots {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.center-testimonial-carousel .owl-dots button.owl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  background: var(--owl-dots);
+  margin: 0 3px;
+  box-shadow: none;
+  border: none;
+}
+
+.center-testimonial-carousel .owl-dots button.owl-dot.active {
+  background-color: var(--primary-color);
+  width: 20px;
+  border-radius: 25px;
+}
+
+.center-testimonial-carousel .owl-dots button.owl-dot:focus {
+  outline: none;
+}
+
+.center-testimonial-card .tp-avatar {
+  width: 80px;
+  margin: auto;
+}
+
+.center-testimonial-card .tp-testimonial-content {
+  font-size: 18px;
+  font-style: italic;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.testimonial-author {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.autor-profession {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/**  Call To Action **/
+.call-action-wrapper {
+  background-color: var(--primary-color);
+  padding: 50px 0px;
+}
+
+/* ==========   WHY US ========== */
+.tp-why-us-left-side {
+  padding: 20px 30px 0 0;
+}
+
+.tp-why-us-left-side h5.overheadline {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.mc-flex-box-layer {
+  margin-top: 50px;
+}
+
+.tp-flex-box {
+  padding: 15px;
+  max-width: 500px;
+}
+
+.tp-media-object {
+  display: flex !important;
+}
+
+.tp-media-object .tp-media-img {
+  width: 90px;
+}
+
+.tp-media-caption {
+  margin-left: 1rem;
+}
+
+
+.tp-media-caption h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.tp-media-caption p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 0px;
+}
+
+.tp-why-us-right-side {
+  background-image: url("../../../images/commons/home-niches/coportate/img31.jpg");
+  height: 520px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* ========== YOUTUBE POPUP ========== */
+.popup-youtube {
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: 80px;
+  right: 80px;
+  transform: none;
+  text-align: center;
+}
+
+.popup-youtube .video-image {
+  position: relative;
+  display: inline-block;
+}
+
+.popup-youtube .video-image img {
+  width: 100%
+}
+
+.popup-youtube .video-image img a:link {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.popup-youtube .video-image img a:visited {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.popup-youtube .video-image img a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.popup-youtube .video-image img a:active {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* ========== PULSING BTN ========== */
+.pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: var(--corporate-primary);
+  width: 70px;
+  height: 70px;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 70px;
+  font-size: 30px;
+  transform: translate(-50%, -50%);
+  padding-left: 4px;
+}
+
+.pulse::before,
+.pulse::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid var(--corporate-primary);
+  top: -15px;
+  right: -15px;
+  left: -15px;
+  bottom: -15px;
+  animation: pulse 1.5s linear infinite;
+}
+
+.pulse::after {
+  animation-delay: .5s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+  /* ========== HOME CONTACT ========== */
+  .tp-contact1-parallax{ 
+    background-image: url("../../../images/commons/home-niches/coportate/corporate-2.jpg");
+    height: 650px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.tp-contact1-parallax:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, var(--headline-color), var(--headline-color));
+    opacity: 0.7;
+    z-index: 1;
+  }
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1600px) {
+  .ws-right-content-box {
+    width: 85%;
+    left: 70px;
+  }
+}
+
+@media (max-width:1200px) {
+  .csb-lg-mt-1 {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:991px) {
+  .ws-left-img-side {
+    height: 400px;
+  }
+
+  .ws-right-content-side {
+    height: 100%;
+    background-color: var(--primary-color);
+    margin: 0px;
+    position: relative;
+  }
+
+  .ws-right-content-box {
+    margin: 0px;
+    position: relative;
+    top: auto;
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    left: 0;
+    width: 100%;
+    padding: 50px 35px;
+  }
+
+}
+
+@media (max-width:767px) {
+  .csb-md-mt-1 {
+    margin-top: 20px;
+  }
+
+}
+
+@media (max-width:576px) {
+  .tp-why-us-left-side {
+    padding: 0px;
+  }
+
+  .center-testimonial-card .tp-testimonial-content {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:480px) {
+  .tp-media-object {
+    display: block !important;
+  }
+
+  .tp-media-object .tp-media-img {
+    margin: auto auto 15px;
+  }
+
+  .tp-media-caption {
+    margin-left: 0rem;
+    text-align: center;
+  }
+}

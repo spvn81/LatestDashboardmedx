@@ -1,0 +1,607 @@
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+    --primary-color: var(--dealer-primary);
+    --secundary-color: var(--dealer-secundary);
+    --headline-color: var();
+    --paragraph-color: var();
+    --background-color: var();
+}
+
+/* ========== COLOR RESET ========== */
+ul.top-contact li a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.social-list li a:hover {
+    color: var(--primary-color);
+}
+
+.top-social .btn-default:hover {
+    color: var(--primary-color);
+}
+
+/* ========== FOOTER COLOR RESET ========== */
+.footer-terms a:hover{
+    color: var(--primary-color);
+}
+
+.footer-copyright p a:hover{
+    color: var(--primary-color);
+}
+
+ul.quick-links li a:hover{
+    color: var(--primary-color);
+}
+  
+ul.footer-contact li a:hover{
+    color: var(--primary-color);
+}
+
+ul.footer-social li a:hover{
+    color: var(--primary-color);
+}
+
+.cd-top {
+    background: var(--primary-color) url(../../../images/icons/cd-top-arrow.svg) no-repeat center 50%;
+}
+
+/* ===================================== 
+    DEALER. 
+===================================== */
+.front-search {
+    margin-top: -150px;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 0;
+}
+
+.front-search-container {
+    background: #f0f0f0;
+    height: 260px;
+    position: relative;
+}
+
+.left-side .row .col-md-4 .form-group .select-form .form-control {
+    height: 40px;
+    font-size: 14px;
+    border-radius: 0px;
+    color: #999;
+    border: 1px solid #e6e6e6;
+}
+
+.left-side .row .col-md-4 .form-group .select-form .form-control {
+    color: #212529;
+    background-color: #fff;
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.left-side .row .col-md-4 .form-group label {
+    font-weight: 700;
+    color: var(--headline-color);
+}
+
+.left-side .row .col-md-4 .form-group .select-form {
+    margin-top: 10px;
+}
+
+.left-side .row .col-md-4 .form-group {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.left-side {
+    float: left;
+    width: 60%;
+    height: 260px;
+    padding: 40px 30px 40px 30px;
+}
+
+.right-side {
+    float: right;
+    width: 40%;
+    background: var(--dealer-primary);
+    height: 260px;
+    padding: 40px 30px 40px 30px;
+    color: #FFF;
+}
+
+.price-range .ui-button.ui-state-disabled:hover,
+.price-range .ui-button.ui-state-disabled:active {
+    border: 1px solid #fff;
+    background: #fff;
+    font-weight: normal;
+    color: #454545;
+}
+
+.price-range label {
+    color: #FFF;
+}
+
+.btn-search {
+    margin-top: 30px;
+}
+
+.price-slider {
+    margin: 15px 0px 15px 0px;
+}
+
+.rank-label {
+    background: transparent;
+    border: none;
+    font-weight: 500;
+    color: #FFF;
+    font-size: 18px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+
+/* We use html here because we need a greater specificity to make sure disabled
+works properly when clicked or hovered */
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border: 1px solid #FFF;
+    background: #FFF;
+    font-weight: normal;
+    color: #454545;
+}
+
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited,
+a.ui-button,
+a:link.ui-button,
+a:visited.ui-button,
+.ui-button {
+    color: #454545;
+    text-decoration: none;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+    border: 1px solid #CC0023;
+    background: #333;
+    font-weight: normal;
+    color: #2b2b2b;
+}
+
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited,
+.ui-state-focus a,
+.ui-state-focus a:hover,
+.ui-state-focus a:link,
+.ui-state-focus a:visited,
+a.ui-button:hover,
+a.ui-button:focus {
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+.ui-visual-focus {
+    box-shadow: none
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    border: 1px solid #333;
+    background: #333;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.box-front-dealer {
+    padding: 5px;
+}
+
+.cd-top {
+    background: var(--primary-color) url(../../../images/icons/cd-top-arrow.svg) no-repeat center 50%;
+}
+
+/* ========== ABOUT US ========== */
+h5.overheadline {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.home-about {
+    padding-right: 50px;
+}
+
+.home-icon-box h3 {
+    font-size: 20px;
+    margin: 15px 0px 5px;
+}
+
+.icon-pic {
+    width: 60px;
+}
+
+.home-about .tp-btn-primary {
+    margin-top: 25px;
+}
+
+/* ========== SERVICES ========== */
+.bg-wrapper {
+    padding: 1rem 0rem;
+}
+
+#bigHalfCircle path {
+    fill: #F7FAFA;
+    stroke: #F7FAFA;
+}
+
+/* Big triangle with shadow */
+#trianglePath1 {
+    fill: #F7FAFA;
+    stroke: #F7FAFA;
+}
+
+#trianglePath2 {
+    fill: #CC0023;
+    stroke: #CC0023;
+}
+
+#bigTriangleShadow {
+    margin-bottom: 1.5rem;
+}
+
+.about-service-icon {
+    width: 60px;
+    float: left;
+    margin: 0px 15px 20px 0px;
+}
+
+.inner-service-bar h5 {
+    margin-bottom: 5px;
+}
+
+.inner-service-bar p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* ========== LISTING CAROUSEL ========== */
+.listing-carousel {
+    position: relative;
+}
+
+.listing-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.listing-carousel .owl-carousel .item .listing-thumb {
+    margin: 0px 10px;
+}
+
+.listing-carousel .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.listing-carousel .owl-dots button.owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--owl-dots);
+    margin: 0 3px;
+    box-shadow: none;
+    border: none;
+}
+
+.listing-carousel .owl-dots button.owl-dot.active {
+    background-color: var(--primary-color);
+    width: 20px;
+    border-radius: 25px;
+}
+
+.listing-carousel .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.listing-thumb {
+    display: block;
+    height: auto;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.listing-caption {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+.listing-caption h3 {
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.listing-caption .tp-btn-primary {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.listing-details {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listing-details-block p {
+    margin-bottom: 0px;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.listing-details-block h4 {
+    margin-bottom: 0px;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.ld-center {
+    margin: auto 30px;
+}
+
+/* ========== HOME CONTACT ========== */
+.tp-contact1-parallax {
+    background-image: url("../../../images/commons/home-niches/dealer/pages-bg.jpg");
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.tp-contact1-parallax:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, var(--headline-color), var(--headline-color));
+    opacity: 0.8;
+    z-index: 1;
+}
+
+/* ========== TESTIMONIALS ========== */
+.testimonials-layer .media {
+    margin: 25px 0px;
+    padding: 25px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    position: relative;
+}
+
+.tp-media-object {
+    display: flex;
+}
+
+.tp-media-object .tp-media-img {
+    width: 120px;
+}
+
+.tp-media-object h5 {
+    font-size: 18px;
+    color: var(--headline-color);
+}
+
+.tp-media-caption {
+    margin-left: 1rem;
+}
+
+.testimonials-layer .media h5 {
+    font-size: 18px;
+    color: var(--headline-color);
+}
+
+.tp-media-caption p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 0px;
+}
+
+.quote-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.quote-icon .fas {
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.tl-layer {
+    position: relative;
+}
+
+.about-testimonials {
+    margin: 0px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-right: 5rem;
+}
+
+.about-testimonials h5 {
+    color: var(--primary-color);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.about-testimonials h2 {
+    margin-bottom: 25px;
+}
+
+/* ========== CLIENTS CAROUSEL ========== */
+.partners-carousel {
+    position: relative;
+}
+
+.partners-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.partners-carousel .owl-carousel .item .partner-logo {
+    margin: auto 10px;
+    width: 200px;
+}
+
+.partners-carousel .owl-dots {
+    display: none;
+}
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1200px) {
+    .inner-service-bar {
+        margin: 10px 0px;
+    }
+}
+
+@media (max-width:991px) {
+    .front-search {
+        margin-top: 0px;
+        padding: 0px;
+    }
+
+    .front-search-container {
+        height: 100%;
+        position: relative;
+    }
+
+    .front-search-container .form-control {
+        width: 100%;
+    }
+
+    .left-side {
+        float: none;
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+    }
+
+    .right-side {
+        float: none;
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+    }
+
+    .home-about {
+        padding-right: 0px;
+    }
+
+    .about-testimonials {
+        margin: 0px;
+        position: relative;
+        top: auto;
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        padding-right: 0rem;
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width:767px) {
+    .hic-mt {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width:576px) {
+    .testimonials-layer .d-md-flex {
+        display: block !important;
+    }
+
+    .testimonials-layer .flex-shrink-0 {
+        flex-shrink: auto !important;
+    }
+
+    .about-service-icon {
+        width: 60px;
+        float: none;
+        margin: 0px 15px 20px 0px;
+    }
+
+}
+
+@media (max-width:480px) {
+    .tp-media-object {
+        display: block !important;
+    }
+
+    .tp-media-object .tp-media-img {
+        width: 90px;
+        margin: auto auto 15px;
+    }
+
+    .tp-media-caption {
+        margin-left: 0rem;
+        text-align: center;
+    }
+
+    .listing-details {
+        margin-top: 20px;
+        display: block;
+        align-items: left;
+        justify-content: left;
+    }
+
+    .ld-center {
+        margin: 15px auto;
+    }
+
+    .partners-carousel .owl-carousel .item .partner-logo {
+        margin: auto 10px;
+        width: 150px;
+    }
+
+}
+
+@media (max-width:380px) {
+    .listing-details {
+        display: none;
+    }
+}

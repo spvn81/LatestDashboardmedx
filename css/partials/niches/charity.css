@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+    --primary-color: var(--charity-primary);
+    --secundary-color: var(--charity-secundary);   
+    --headline-color: var(); 
+    --paragraph-color: var();
+    --background-color: var();
+} 
+
+/* ========== HEADER COLOR RESET ========== */
+ul.top-contact li a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.social-list li a:hover {
+    color: var(--primary-color);
+} 
+
+.top-social .btn-default:hover {
+    color: var(--primary-color);
+}
+
+/* ========== FOOTER COLOR RESET ========== */
+.footer-terms a:hover{
+    color: var(--primary-color);
+}
+
+.footer-copyright p a:hover{
+    color: var(--primary-color);
+}
+
+ul.quick-links li a:hover{
+    color: var(--primary-color);
+}
+  
+ul.footer-contact li a:hover{
+    color: var(--primary-color);
+}
+
+ul.footer-social li a:hover{
+    color: var(--primary-color);
+}
+
+.cd-top {
+    background: var(--primary-color) url(../../../images/icons/cd-top-arrow.svg) no-repeat center 50%;
+}
+
+/* ===================================== 
+    NAME. 
+===================================== */
+.front-section{
+    width: 100%;
+    height: 310px;
+    background: var(--primary-color);
+    color: #FFF;
+    position: relative;
+    margin-top: -20px;
+    padding-top: 40px;
+}
+
+.front-section h1{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.front-boxes{
+    position: relative;
+    margin-top: -150px;
+}
+
+.span-charity{
+    background: #fff;
+    padding: 50px 20px 50px 20px;
+    position: relative;
+}
+
+.span-charity:before, .span-charity:after{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.span-charity:after{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+.span-charity h4{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.span-charity p{
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.charity-icon{
+    width: 50px;
+    margin: auto;
+}
+.charity-icon img{
+    width: 100%;
+}
+
+.front-message{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.charity-center-title {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+  }
+
+/* ========== #### ========== */
+.charities-carousel {
+    position: relative;
+}
+
+.charities-carousel .owl-theme .custom-nav {
+    display: none;
+}
+.charities-carousel .owl-carousel .item{
+    margin: 10px;
+}
+
+.charities-carousel .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.charities-carousel .owl-dots button.owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--owl-dots);
+    margin: 0 3px;
+    box-shadow: none;
+    border: none;
+}
+
+.charities-carousel .owl-dots button.owl-dot.active {
+    background-color: var(--primary-color);
+    width: 20px;
+    border-radius: 25px;
+}
+
+.charities-carousel .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.charity-card{
+    background-color: #FFFFFF;
+    padding: 10px;
+    -webkit-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    -moz-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+}
+
+.charity-caption{
+    padding: 15px;
+    background-color: #FFFFFF;
+}
+
+.charity-caption .tp-btn-primary{
+    background-color: var(--secundary-color);
+    border-color: var(--secundary-color);
+    margin-top: 15px;
+}
+
+.campaign-progress {
+    height: 15px;
+    margin: 10px 0px 15px 0px;
+    overflow: hidden;
+    background-color: #e6e6e6;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  
+  .campaign-progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 13px;
+    line-height: 15px;
+    color: #fff;
+    text-align: center;
+    background-color: #FA5F05;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: width .6s ease;
+         -o-transition: width .6s ease;
+            transition: width .6s ease;
+      font-family: 'Roboto', sans-serif;
+  }
+
+  .campaign-layer p{
+      font-size: 14px;
+      color: #000000;
+  }
+
+  .campaign-layer .goal{
+    text-align: right;
+  }
+
+  .charity-caption h3{
+      font-size: 22px;
+  }
+
+  /* ========== #### ========== */
+.tp-counter-parallax{
+    background-image: url("../../../images/commons/home-niches/charity/img17.jpg");
+    height: 500px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.tp-counter-content { 
+    margin: 0px; 
+    position: absolute; 
+    top: 50%;
+    -ms-transform: translateY(-50%); 
+    transform: translateY(-50%); 
+    max-width: 600px;
+}
+
+.tp-counter-content h5{
+    color: var(--primary-color);
+}
+
+.tp-counter-content h2{
+    color: #FFFFFF;
+}
+
+.tp-counter-content p{
+    color: #FFFFFF;
+    margin: 20px 0px 35px;
+}
+
+.tp1-counter-box{
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+
+.tp1-counter-box{
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.mo-counter{
+    display: flex !important;
+}
+
+.mo-counter-thumb{
+    width: 60px;
+    flex-shrink: 0 !important;
+}
+
+.tp-cb-caption{
+    margin-left: 1rem;
+}
+
+.tp-cb-caption .counter{
+    font-family: var(--base-font);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--headline-color);
+    margin-bottom: 0px;
+}
+
+.tp-cb-caption p{
+    font-size: 10px;
+    line-height: 1.3;
+    color: var(--paragraph-color);
+    margin: 0px;
+}
+
+.moc-center{
+    align-items: center !important;
+}
+
+/* ========== #### ========== */
+.news-card-carousel {
+    position: relative;
+}
+
+.news-card-carousel .owl-theme .custom-nav {
+    display: none;
+}
+.news-card-carousel .owl-carousel .item{
+    margin: 10px;
+}
+
+.news-card-carousel .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.news-card-carousel .owl-dots button.owl-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: var(--owl-dots);
+    margin: 0 3px;
+    box-shadow: none;
+    border: none;
+}
+
+.news-card-carousel .owl-dots button.owl-dot.active {
+    background-color: var(--primary-color);
+    width: 20px;
+    border-radius: 25px;
+}
+
+.news-card-carousel .owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.nc-date{
+    background-color: var(--primary-color);
+    height: 60px;
+    padding: 8px 0px;
+}
+
+.nc-date h4, .nc-date p{
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.nc-date p{
+    font-size: 14px;
+    margin-top: -2px;
+    font-weight: 500;
+}
+
+.nc-comment{
+    background-color: var(--primary-color);
+    height: 60px;
+    padding: 8px 0px;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.nc-comment .fas{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.nc-comment p{
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+    margin: -3px 0 0px;
+}
+
+.nc-right-layer{
+    padding-top: 15px;
+}
+
+.nc-right-layer h3{
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.nc-right-layer h3 a{
+    color: var(--headline-color);
+}
+
+.nc-right-layer p{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/* ========== #### ========== */
+/* ========== #### ========== */
+/* ========== #### ========== */
+/* ========== #### ========== */
+/* ========== #### ========== */
+/* ========== #### ========== */
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1200px) {
+    
+}
+@media (max-width:991px) {
+
+}
+@media (max-width:767px) {
+    .tp-counter-parallax{
+        height: 100%; 
+        padding: 60px 0px;
+    }
+
+    .tp-counter-content { 
+        margin: 0px; 
+        position: relative; 
+        top: auto;
+        -ms-transform: translateY(0%); 
+        transform: translateY(0%); 
+        max-width: 100%;
+    }
+
+    .tp1-counter-box{
+        padding: 10px;
+        width: 200px;
+        margin: 5px 0px;
+    }
+    
+}
+@media (max-width:576px) {
+    .news-card-caption .nc-left-layer {
+        display: none;
+    }
+
+    .front-section{
+        width: 100%;
+        height: auto;
+        margin-top: 0px;
+        padding: 40px 15px;
+    }
+
+    .front-boxes{
+        position: relative;
+        margin-top: 0px;
+    }
+
+    .front-section h1{
+        margin-top: 0px;
+    }
+
+    .campaign-layer .goal{
+        text-align: left;
+      }
+}
+@media (max-width:480px) {
+    .front-section h1{
+        font-size: 30px;
+        line-height: 1.3;
+
+    }
+}

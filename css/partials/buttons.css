@@ -1,0 +1,71 @@
+/* ===================================== 
+    BUTTONS. 
+===================================== */
+.tp-btn-primary {
+  display: inline-block;
+  font-family: var(--base-font);
+  padding: 10px 30px;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 1.3333333;
+  font-weight: 600;
+  color: #FFF;
+  background-color: var(--button-background);
+  border: 1px solid var(--button-background);
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 3px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out 0s; 
+  -moz-transition: all 0.3s ease-in-out 0s; 
+  -ms-transition: all 0.3s ease-in-out 0s; 
+  -o-transition: all 0.3s ease-in-out 0s; 
+  transition: all 0.3s ease-in-out 0s; 
+}
+
+.tp-btn-primary:hover {
+  color: #fff !important;
+  background-color: var(--secundary-color);
+  border-color: var(--secundary-color);
+}
+
+.tp-btn-primary:focus, .tp-btn-primary.focus {
+  color: #fff;
+  background-color: var(--secundary-color);
+  border-color: var(--secundary-color);
+  box-shadow: none;
+  outline: 0;
+}
+
+.tp-btn-primary.disabled, .tp-btn-primary:disabled {
+  color: #fff;
+  background-color: var(--secundary-color);
+  border-color: var(--secundary-color);
+}
+
+.tp-btn-primary:not(:disabled):not(.disabled):active, .tp-btn-primary:not(:disabled):not(.disabled).active,
+.show > .tp-btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: var(--secundary-color);
+  border-color: var(--secundary-color);
+}
+
+.tp-btn-primary.disabled,
+.tp-btn-primary:disabled {
+  color: #fff;
+  background-color: var(--secundary-color);
+  border-color: var(--secundary-color);
+  opacity: 1;
+}
+
+.btn-default-white {
+  color: var(--headline-color);
+  background-color: #FFF;
+  border-color:  #FFF;
+}
+
+  

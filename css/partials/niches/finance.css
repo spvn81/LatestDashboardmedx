@@ -1,0 +1,340 @@
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+  --primary-color: var(--finance-primary);
+  --secundary-color: var(--finance-secundary);
+  --headline-color: var();
+  --paragraph-color: var();
+  --background-color: var();
+}
+
+/* ========== HEADER COLOR RESET ========== */
+ul.top-contact li a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.social-list li a:hover {
+  color: var(--primary-color);
+}
+
+.top-social .btn-default:hover {
+  color: var(--primary-color);
+}
+
+/* ========== FOOTER COLOR RESET ========== */
+.footer-terms a:hover{
+  color: var(--primary-color);
+}
+
+.footer-copyright p a:hover{
+  color: var(--primary-color);
+}
+
+ul.quick-links li a:hover{
+  color: var(--primary-color);
+}
+
+ul.footer-contact li a:hover{
+  color: var(--primary-color);
+}
+
+ul.footer-social li a:hover{
+  color: var(--primary-color);
+}
+
+.cd-top {
+  background: var(--primary-color) url(../../../images/icons/cd-top-arrow.svg) no-repeat center 50%;
+}
+
+/* ===================================== 
+    FINANCE. 
+===================================== */
+
+/* ========== ABOUT US ========== */
+.about-services {
+  margin-top: 20px;
+}
+
+.about-services-box {
+  margin: 25px 0px;
+}
+
+h5.overheadline {
+  color: var(--primary-color);
+}
+
+.tp-square {
+  border: solid 2px var(--primary-color);
+  width: 70px;
+  height: 70px;
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex !important;
+  border-radius: 5px;
+}
+
+.square-icon {
+  width: 45px;
+}
+
+.about-services-caption h3 {
+  font-size: 18px;
+  margin: -10px auto 0px;
+}
+
+.about-services-caption p {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0px auto 0px;
+}
+
+/* ========== SERVICE CAROUSEL ========== */
+.finance-service-carousel {
+  position: relative;
+  z-index: 0;
+}
+
+.finance-service-carousel .owl-theme .custom-nav {
+  display: none;
+}
+
+.finance-service-carousel .owl-carousel .item {
+  margin: 10px;
+}
+
+.finance-service-carousel .owl-dots {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.finance-service-carousel .owl-dots button.owl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  background: var(--paragraph-color);
+  opacity: 0.2;
+  margin: 0 3px;
+  box-shadow: none;
+  border: none;
+}
+
+.finance-service-carousel .owl-dots button.owl-dot.active {
+  background-color: var(--primary-color);
+  width: 20px;
+  border-radius: 25px;
+  opacity: 1;
+}
+
+.finance-service-carousel .owl-dots button.owl-dot:focus {
+  outline: none;
+}
+
+.services-card {
+  background-color: #FFF;
+  -webkit-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+  -moz-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+  box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+  text-align: center;
+}
+
+.services-card .sc-caption {
+  padding: 15px 30px 30px;
+}
+
+.services-card .sc-caption p {
+  margin-bottom: 0px;
+}
+
+.rounded-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: solid 1px #ddd;
+  box-shadow: 0 0 10px rgba(204, 204, 204, 0.6);
+  -moz-box-shadow: 0 0 10px rgba(204, 204, 204, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(204, 204, 204, 0.6);
+  -o-box-shadow: 0 0 10px rgba(204, 204, 204, 0.6);
+  position: relative;
+  margin: -30px auto 0px auto;
+  background: #FFF;
+  transition: 0.3s;
+}
+
+.services-card:hover .rounded-circle {
+  background: var(--primary-color);
+  border: solid 1px var(--primary-color);
+}
+
+.center-circle-icon {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+}
+
+/* ========== TESTIMONIALS ========== */
+
+.testimonial-banner {
+  background-color: var(--primary-color);
+  padding: 80px 0px 200px;
+}
+
+.testimonial-banner {
+  background-color: var(--primary-color);
+  padding: 80px 0px 200px;
+}
+
+.up-testimonial-layer {
+  margin-top: -220px;
+}
+
+.up-testimonial-layer .center-title h2 {
+  color: #FFF;
+}
+
+.up-testimonial-layer .center-title h5 {
+  color: #FFF;
+}
+
+.testimonials-carousel {
+  position: relative;
+  z-index: 0;
+}
+
+.testimonials-carousel .owl-theme .custom-nav {
+  display: none;
+}
+
+.testimonials-carousel .owl-dots {
+  display: none;
+}
+
+.testimonials-carousel .owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: #FFF;
+  border: solid 1px #000;
+  margin: 0 3px;
+  box-shadow: none;
+  border-radius: 50%;
+}
+
+.testimonials-carousel .owl-dots button.owl-dot.active {
+  background-color: #000;
+  width: 15px;
+  border: solid 1px #000;
+}
+
+.testimonials-carousel .owl-dots button.owl-dot:focus {
+  outline: none;
+}
+
+.testimonial-text {
+  background-color: #FFF;
+  -webkit-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+  -moz-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+  box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+  padding: 30px;
+  margin: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.testimonial-text .fas {
+  font-size: 40px;
+  color: var(--primary-color);
+  opacity: 0.9;
+}
+
+.testimonial-box .bottom-line {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  bottom: -5px;
+  background-color: var(--secundary-color);
+  width: 50px;
+  height: 5px;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.testimonial-box:hover .bottom-line {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  bottom: -5px;
+  background-color: var(--secundary-color);
+  width: 100%;
+}
+
+.author-avatar {
+  width: 100px;
+  margin: 35px auto 0px;
+}
+
+.author-avatar img {
+  border-radius: 50%;
+}
+
+.testimonial-box h4 {
+  text-align: center;
+  font-size: 18px;
+  margin: 15px 0px 0px;
+}
+
+p.profession {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.all-testimonials .testimonial-box {
+  margin: 25px 0px;
+}
+
+/* ========== HOME CONTACT ========== */
+.tp-contact1-parallax {
+  background-image: url("../../../images/commons/home-niches/finance/image21.jpg");
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.tp-contact1-parallax:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, var(--headline-color), var(--headline-color));
+  opacity: 0.8;
+  z-index: 1;
+}
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1200px) {}
+
+@media (max-width:991px) {}
+
+@media (max-width:767px) {}
+
+@media (max-width:576px) {}
+
+@media (max-width:480px) {}

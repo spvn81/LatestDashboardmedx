@@ -1,0 +1,203 @@
+/* ===================================== 
+    10. GALLERY FILTER.
+===================================== */
+/* * {
+    -webkit-transform-origin: center !important;
+    transform-origin: center !important;
+  } */
+
+  .filter-container {
+    width: 100%;
+    margin: 0rem auto 2.5rem;
+    text-align: center;
+  }
+
+  .filter {
+    padding: 0;
+    list-style: none;
+  }
+
+  .filter li {
+    font-size: 14px;
+    font-family: var(--base-font);
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 2;
+    padding: 5px 25px;
+    position: relative;
+    color: var(--headline-color);
+    font-weight: 600;
+    /* border: solid 2px var(--secundary-color); */
+    border-radius: 10px;
+    margin: 0px 5px;
+  }
+
+  .filter li.active {
+    background-color: var(--secundary-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 50rem !important;
+    color: #FFF;
+  }
+
+  #kehl-grid {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    /*  max-width:1920px; */
+  }
+
+  #kehl-grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .grid-box {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: calc(100% / 3);
+    margin: 0;
+    padding: 5px;
+    /*   box-sizing: border-box;
+        -webkit-transform: translate3d(1px,0,0);
+        transform: translate3d(1px,0,0); */
+    clear: both;
+  }
+
+  /* #kehl-grid p {
+    color: #333;
+    z-index: 4;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+  } */
+
+  /* clear fix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  /* ---- .grid-item ---- */
+  .grid-sizer,
+  .grid-box {
+    width: 33.333%;
+  }
+
+  .grid-two-col .grid-sizer,
+  .grid-two-col .grid-box {
+    width: 49%;
+  }
+
+  .grid-four-col .grid-sizer,
+  .grid-four-col .grid-box {
+    width: 25%;
+  }
+
+  .grid-box {
+    float: left;
+    text-align: left;
+  }
+
+  .grid-box img {
+    display: block;
+    width: 100%;
+  }
+
+  .grid-box .image-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(256, 256, 256, 0);
+    z-index: 1;
+    transition: all 300ms linear;
+  }
+
+  .grid-box:hover .image-mask {
+    background: rgba(256, 256, 256, .8);
+  }
+
+  /* .grid-box h3 {
+    position: absolute;
+    width: 100%;
+    bottom: 30%;
+    left: 0;
+    margin-bottom: -16px;
+    line-height: 26px;
+    text-align: center;
+    z-index: 4;
+    opacity: 0;
+    transition: all 300ms linear;
+  }
+
+  .grid-box:hover h3 {
+    bottom: 50%;
+    opacity: 1;
+  }
+
+  .grid-box p {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    opacity: 0;
+    font-style: italic;
+    line-height: 18px;
+    transition: all 300ms linear;
+  }
+
+  .grid-box:hover p {
+    top: 60px;
+    left: 25px;
+    opacity: 0;
+  } */
+
+
+  /* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1200px) {
+  .grid-four-col .grid-sizer,
+  .grid-four-col .grid-box {
+    width: 50%;
+  }
+}
+
+@media (max-width:991px) {
+  .grid-sizer,
+  .grid-box {
+    width: 50%;
+  }
+}
+
+@media (max-width:767px) {}
+
+@media (max-width:576px) {
+
+  .grid-sizer,
+  .grid-box {
+    width: 100%;
+  }
+
+  .grid-four-col .grid-sizer,
+  .grid-four-col .grid-box {
+    width: 100%;
+  }
+}
+
+@media (max-width:480px) {
+  .filter li {
+    font-size: 12px;
+    line-height: 2;
+    padding: 3px 15px;
+    margin: 0px 3px;
+  }
+}
+  

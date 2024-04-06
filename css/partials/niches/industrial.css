@@ -1,0 +1,490 @@
+/* ===================================== 
+    HOME NICHE COLOR STRUCTURE. 
+===================================== */
+:root {
+    --primary-color: var(--industrial-primary);
+    --secundary-color: var(--industrial-primary);
+    --headline-color: var(--industrial-headline-secundary);
+    /* --paragraph-color: var(--industrial-paragraph-color); */
+    --background-color: var();
+}
+
+/* ===================================== 
+    INDUSTRIAL. 
+===================================== */
+/* TABS */
+.erinyen .tp-tab-title {
+    color: var(--primary-color) !important;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* ========== SERVICES ========== */
+.front-carousel {
+    position: relative;
+}
+
+.front-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.front-carousel .owl-dots {
+    display: none;
+}
+
+.about-left {
+    padding: 0px 50px;
+    position: relative;
+}
+
+.box-layer {
+    background-color: #FFF;
+    margin: 10px 15px;
+    padding: 40px 25px;
+    -webkit-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    -moz-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+}
+
+.icon-box {
+    background-color: var(--primary-color);
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    position: relative;
+}
+
+.bl-icon {
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.box-layer h4 {
+    color: var(--headline-color);
+    text-align: center;
+    margin: 20px 0px 5px 0px;
+}
+
+.box-layer p {
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.box-layer h6 {
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+.box-layer h6 a {
+    text-decoration: none;
+    color: var(--primary-color);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.box-layer h6 a:hover {
+    text-decoration: none;
+    color: var(--headline-color);
+}
+
+/* ========== ABOUT US ========== */
+
+.mission-layer {
+    position: absolute;
+    background-color: var(--primary-color);
+    padding: 25px;
+    bottom: 10%;
+    left: 0px;
+    width: 250px;
+    border-radius: 5px;
+    outline: 2px solid #FFF;
+    outline-offset: -8px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.mission-layer:hover {
+    background-color: var(--secundary-color);
+    outline: 2px solid #FFF;
+    outline-offset: -8px;
+}
+
+.ml-icon {
+    width: 40px;
+}
+
+.mission-layer h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--headline-color);
+    margin: 10px 0px;
+}
+
+.mission-layer p {
+    color: var(--headline-color);
+    line-height: 22px;
+}
+
+.about-right h6 a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.signature-layer {
+    margin-top: 35px;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.signature-img {
+    width: 160px;
+    margin-right: 30px;
+}
+
+.front-contact-layer h4 {
+    margin-bottom: 0px;
+}
+
+.front-contact-layer h4 a {
+    margin-bottom: 0px;
+    color: var(--headline-color);
+}
+
+.about-right h5.overheadline {
+    font-size: 14px;
+    line-height: 25px;
+    color: #a3b0b4;
+}
+
+/* ========== WIDE SECTION ========== */
+.ws-left-layer {
+    background-image: url("../../../images/commons/home-niches/industrial/industra-img-26.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.ws-right-layer {
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 80px;
+    margin-left: -100px;
+    z-index: 1;
+    -webkit-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    -moz-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+}
+
+.ws-right-layer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--headline-color);
+}
+
+.ws-content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 60%;
+    padding-left: 5rem;
+}
+
+.ws-content h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.ws-content h2 {
+    color: #FFF;
+    margin-bottom: 15px;
+}
+
+.ws-content p {
+    color: #FFF;
+}
+
+.box-content {
+    margin-top: 50px;
+    display: flex !important;
+}
+
+.box-content h4 {
+    color: #FFF;
+}
+
+.box-content p {
+    color: #FFF;
+}
+
+.bc-icon {
+    width: 50px;
+}
+
+.inner-bc {
+    display: inline-block;
+    padding-right: 50px;
+}
+
+.inner-bc h4 {
+    font-size: 17px;
+    color: var(--primary-color);
+    margin: 10px 0px 5px 0px;
+}
+
+.inner-bc p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
+/* ========== COUNTER ========== */
+.counter-layer {
+    background-image: url("../../../images/commons/home-niches/industrial/testimonial-bg.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 140px 0px 60px;
+    margin-top: -80px;
+}
+
+.counter-layer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--headline-color);
+    opacity: 0.7;
+}
+
+.counter-layer .counter-box {
+    z-index: 1;
+    position: relative;
+}
+
+.counter-layer .counter {
+    color: #FFF;
+}
+
+.counter-layer p {
+    color: #FFF;
+}
+
+/* ========== TEAM ========== */
+.team-card-box {
+    background-color: var(--background-color);
+    padding: 25px;
+}
+
+.team-carousel-2 .owl-dots {
+    display: none;
+}
+
+.team-caption p.profession {
+    color: var(--primary-color);
+}
+
+/* ========== NEWS CAROUSEL ========== */
+.news-carousel {
+    position: relative;
+}
+
+.news-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+.news-carousel .owl-carousel .item .news-box {
+    margin: auto 10px;
+}
+
+.news-carousel .owl-dots {
+    display: none;
+}
+
+.nb-thumb {
+    position: relative;
+    z-index: 1;
+}
+
+.nb-avatar {
+    width: 50px !important;
+    border-radius: 50%;
+}
+
+.nb-caption {
+    width: 250px;
+    padding: 15px;
+    margin-top: -80px;
+    background-color: #FFF;
+    z-index: 10;
+    position: relative;
+    border-top-right-radius: 10px;
+}
+
+.nb-caption .moc-caption h4 {
+    font-size: 15px;
+    color: var(--headline-color);
+    margin-bottom: 0px;
+}
+
+.nb-caption .moc-caption p {
+    font-size: 14px;
+    color: var(--paragraph-color);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.nb-caption .flex-grow-1 {
+    padding-top: 3px;
+}
+
+.nb-caption-bottom {
+    margin-top: 25px;
+}
+
+.nb-caption-bottom h4 a {
+    color: var(--headline-color);
+}
+
+.moc-thumbnail {
+    width: 50px;
+}
+
+/* =====================================
+    MEDIA QUERIES.
+===================================== */
+@media (max-width:1800px) {
+    .ws-content {
+        width: 75%;
+    }
+
+}
+
+@media (max-width:1600px) {
+    .ws-content {
+        width: 80%;
+    }
+}
+
+@media (max-width:1300px) {
+    .ws-content {
+        width: 85%;
+    }
+}
+
+@media (max-width:1200px) {
+    .ws-content {
+        width: 90%;
+    }
+}
+
+@media (max-width:991px) {
+
+    .ws-left-layer {
+        height: 300px;
+    }
+
+    .ws-right-layer {
+        height: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+        z-index: 1;
+        -webkit-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+        -moz-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+        box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+        padding: 0px 10px;
+    }
+
+    .ws-content {
+        width: 100%;
+        position: relative;
+        top: 0%;
+        -ms-transform: translateY(0%);
+        transform: translateY(0%);
+        padding: 50px 20px;
+    }
+
+    .counter-layer .counter-box {
+        margin: 20px 0px;
+    }
+
+    .about-left {
+        padding: 0px;
+        position: relative;
+    }
+}
+
+@media (max-width:767px) {
+    .team-card-box {
+        max-width: 400px;
+        margin: auto !important;
+    }
+}
+
+@media (max-width:576px) {
+    .ws-content .box-content {
+        display: block !important;
+    }
+
+    .ws-content {
+        padding: 50px 20px;
+    }
+
+    .ib-bottom {
+        margin-top: 20px;
+    }
+
+    .mission-layer {
+        position: relative;
+        background-color: var(--primary-color);
+        padding: 25px;
+        bottom: auto;
+        left: auto;
+        width: 100%;
+        border-radius: 0px;
+        outline: 1px solid #FFF;
+        outline-offset: -10px;
+    }
+
+    .nb-caption {
+        display: none;
+    }
+}
+
+@media (max-width:480px) {
+    .signature-layer {
+        margin-top: 35px;
+        display: block !important;
+        display: block !important;
+    }
+}
