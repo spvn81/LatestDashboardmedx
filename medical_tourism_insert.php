@@ -15,22 +15,25 @@ try {
     $medical_tourism_id = $pdo->lastInsertId();
 
     // Insert file data into medical_tourism_files table
-    $stmt2 = $pdo->prepare("INSERT INTO medical_tourism_files (medical_tourism_id, file, file_type) VALUES (?, ?, ?)");
-    $stmt2->bindParam(1, $medical_tourism_id);
-
-    // Check if files are uploaded
     if (isset($_FILES['files'])) {
-        $file = $_FILES['files']['name'];
-        $file_type = $_FILES['files']['type'];
-        $file_temp = $_FILES['files']['tmp_name'];
+        $fileCount = count($_FILES['files']['name']);
         
-        // Move uploaded file to desired location
-        move_uploaded_file($file_temp, 'uploads/' . $file);
-        
-        // Bind file data to the prepared statement
-        $stmt2->bindParam(2, $file);
-        $stmt2->bindParam(3, $file_type);
-        $stmt2->execute();
+        for ($i = 0; $i < $fileCount; $i++) {
+            $file = $_FILES['files']['name'][$i];
+            $file_type = $_FILES['files']['type'][$i];
+            $file_temp = $_FILES['files']['tmp_name'][$i];
+            
+            // Move uploaded file to desired location
+            $destination = 'uploads/' . $file;
+            move_uploaded_file($file_temp, $destination);
+            
+            // Insert file data into the database
+            $stmt2 = $pdo->prepare("INSERT INTO medical_tourism_files (medical_tourism_id, file, file_type) VALUES (?, ?, ?)");
+            $stmt2->bindParam(1, $medical_tourism_id);
+            $stmt2->bindParam(2, $file);
+            $stmt2->bindParam(3, $file_type);
+            $stmt2->execute();
+        }
     }
 
     // Response

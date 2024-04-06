@@ -88,10 +88,22 @@
     });
 </script>
 
-<style>
- 
-</style>
+
 </head>
+
+<?php
+include 'config/conn.php';
+
+try {
+   
+    $stmt = $pdo->prepare("SELECT id, title FROM treatment_selection");
+    $stmt->execute();
+    $treatments = $stmt->fetchAll(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    echo "Error: " . $e->getMessage();
+}
+
+?>
 
 <body>
 
@@ -1077,16 +1089,19 @@
                                                                                 <div class="col-lg-12 mb-2">
                                                                                     <label for="phone_number" style="color: #000;">Treatment selection</label>
                                                                                     <select class="form-select form-group col-12" aria-label="Default select example" name="treatment_selection_id" style="padding-top: 1%;padding-bottom: 1%;">
-                                                                                        <option selected>Open this select menu</option>
-                                                                                        <option value="1">One</option>
-                                                                                        <option value="2">Two</option>
-                                                                                        <option value="3">Three</option>
+                                                                                 
+                                                                                        <option value="">Select Treatment</option>
+                                                                                        <?php foreach ($treatments as $treatment): ?>
+                                                                                            <option value="<?php echo $treatment['id']; ?>"><?php echo $treatment['title']; ?></option>
+                                                                                        <?php endforeach; ?>
+                                                                                  
                                                                                     </select>
                                                                                 </div>
                                                                                 <div class="col-lg-12 mb-2">
-                                                                                    <label for="phone_number" style="color: #000;">Upload Files</label>
-                                                                                    <input type="file" class="form-control" id="files" name="files">
+                                                                            <label for="phone_number" style="color: #000;">Upload Files</label>
+                                                                            <input type="file" class="form-control" id="files" name="files[]" multiple>
                                                                                 </div>
+
                                                                                 <div class="col-12 mb-2">
                                                                                     <div class="form-group">
                                                                                         <label for="state" style="color: #000;">Message</label>
