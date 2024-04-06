@@ -66,6 +66,26 @@
     }
     </style>
 </head>
+<?php 
+ include('includes/header.php');
+ include('../config/conn.php');
+
+    // Set PDO to throw exceptions on error
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $sql = "SELECT mt.*, ts.*
+            FROM medical_tourism AS mt
+            INNER JOIN treatment_selection AS ts ON mt.treatment_selection_id = ts.id";
+    $stmt = $pdo->prepare($sql);
+
+    $stmt->execute();
+
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+
+    
+    
+?>
 
 <body class="theme-cyan">
 
@@ -114,6 +134,7 @@
 
         <?php 
         include('includes/sidebar.php');
+      
         ?>
 
         <div id="main-content">
@@ -146,77 +167,53 @@
                                                 <th>Email</th>
                                                 
                                                 <th>Mobile</th>
-                                                <th>Location</th>
+                                                <!-- <th>Location</th> -->
 
                                                 <th>Treatment</th>
                                                 <th>Details</th>
                                                 <th>Image</th>
                                                 <th>Action</th>
                                             </tr>
+                                            <?php
+
+
+
+                                             foreach( $results as $fetchData){?>
+                                              <tr>
+                                                <td><a href="patient-profile.html"><?=$fetchData['full_name']?></a></td>
+                                                <td><?=$fetchData['email']?></td>
+                                                
+                                                <td><?=$fetchData['phone_number']?></td>
+                                                <td><?=$fetchData['title']?></td>
+
+                                                <td>Details</td>
+                                                <td><img src="assets/new/images/sm/avatar2.jpg" alt="Image" width="50"></td>
+                                                <td>
+
+                                                    <button type="button" data-toggle="modal" data-target="#radioModal"
+                                                        style="background-color: transparent;border: transparent;"
+                                                        class="btn btn-info rounded-circle" title="Edit">
+                                                        <i class="fa fa-edit" style="color: #000;"></i>
+                                                    </button>
+
+
+                                                    <button type="button" class="btn btn-danger rounded-circle"
+                                                        title="Delete"
+                                                        style="background-color: transparent;border: transparent;"><i
+                                                            class="icon-trash"
+                                                            style="color: #000;size: 12px;"></i></button>
+
+                                                </td>
+
+                                            </tr>
+                                             <?php
+
+                                             }
+                                            ?>
+                                         
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td><a href="patient-profile.html">Andrea Lalema</a></td>
-                                                <td>Info@name@gmail.com</td>
-                                                
-                                                <td>6309877651</td>
-                                                <td>Gachibowli</td>
-
-                                                <td>
-
-                                                    Diabities
-                                                </td>
-                                                <td>Details</td>
-                                                <td><img src="assets/new/images/sm/avatar2.jpg" alt="Image" width="50"></td>
-                                                <td>
-
-                                                    <button type="button" data-toggle="modal" data-target="#radioModal"
-                                                        style="background-color: transparent;border: transparent;"
-                                                        class="btn btn-info rounded-circle" title="Edit">
-                                                        <i class="fa fa-edit" style="color: #000;"></i>
-                                                    </button>
-
-
-                                                    <button type="button" class="btn btn-danger rounded-circle"
-                                                        title="Delete"
-                                                        style="background-color: transparent;border: transparent;"><i
-                                                            class="icon-trash"
-                                                            style="color: #000;size: 12px;"></i></button>
-
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="patient-profile.php">Ramu</a></td>
-
-                                                <td>Info@name@gmail.com</td>
-                                                <td>6309877651</td>
-                                                <td>Gatchibowli</td>
-
-                                                <td>
-
-                                                   Diabities
-                                                </td>
-                                                <td>Details</td>
-                                                <td><img src="assets/new/images/sm/avatar2.jpg" alt="Image" width="50"></td>
-                                                <td>
-
-                                                    <button type="button" data-toggle="modal" data-target="#radioModal"
-                                                        style="background-color: transparent;border: transparent;"
-                                                        class="btn btn-info rounded-circle" title="Edit">
-                                                        <i class="fa fa-edit" style="color: #000;"></i>
-                                                    </button>
-
-
-                                                    <button type="button" class="btn btn-danger rounded-circle"
-                                                        title="Delete"
-                                                        style="background-color: transparent;border: transparent;"><i
-                                                            class="icon-trash"
-                                                            style="color: #000;size: 12px;"></i></button>
-
-                                                </td>
-
-                                            </tr>
+                                         
                                         </tbody>
                                     </table>
                                 </div>

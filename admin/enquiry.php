@@ -9,8 +9,8 @@
 
     // Fetch all rows as an associative array
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    print_r($results);
-    echo "vsdjwyef";
+    
+    
 ?>
     <style>
         td.details-control {
@@ -86,9 +86,7 @@
                                             class="fa fa-arrow-left"></i></a><a href="patient-profile.php"> Enquiry
                                     </a></h2>
                                  <?php 
-                                 echo "<pre>";
-                                 print_r($results);
-                                 echo "</pre>";
+                                
                                  ?>
                             </div>
                         </div>
@@ -108,64 +106,15 @@
                                     <table class="table table-hover js-basic-example dataTable table-custom">
                                         <thead class="theme-cyan">
                                             <?php 
+                                           
+
                                             foreach($results as $data){?>
                                              <tr>
-                                              
+                                                <td><a href="patient-profile.php"><?=$data['full_name']?></a></td>
 
-                                              <td>
-
-                                                  <select class="form-select form-group col-12" name="links" size="1"
-                                                      onchange="window.location.href.value"
-                                                      aria-label="Default select example" id=""
-                                                      style="padding-top: 1%;padding-bottom: 1%;">
-                                                      <option value="">select</option>
-                                                      <option value="">
-                                                          Cancel</option>
-                                                      <option value="">Add
-                                                          Patient</option>
-
-                                                  </select>
-                                              </td>
-                                              <td>
-
-                                                  <button type="button" 
-                                                      style="background-color: transparent;border: transparent;"
-                                                      class="btn btn-info rounded-circle" title="Edit">
-                                                      <i class="fa fa-edit" style="color: #000;"></i>
-                                                  </button>
-
-
-                                                  <button type="button" class="btn btn-danger rounded-circle"
-                                                      title="Delete"
-                                                      style="background-color: transparent;border: transparent;"><i
-                                                          class="icon-trash"
-                                                          style="color: #000;size: 12px;"></i></button>
-
-                                              </td>
-
-                                          </tr>
-<?php
-                                            }
-                                            ?>
-                                            <tr>
-                                                <th>Name</th>
-
-                                                <th>Location</th>
-                                                <th>Mobile</th>
-                                                <th>Email</th>
-
-                                                <th>Status</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                           
-                                            <tr>
-                                                <td><a href="patient-profile.php"><?=$data?></a></td>
-
-                                                <td>Gachibowli</td>
-                                                <td>6309877651</td>
-                                                <td>Info@name@gmail.com</td>
+                                                <td><?php $data['area'].$data['city'].$data['state']?></td>
+                                                <td><?=$data['phone_number']?></td>
+                                                <td><?=$data['email']?></td>
 
                                                 <td>
 
@@ -197,6 +146,25 @@
                                                 </td>
 
                                             </tr>
+                                             <?php  
+                                            }
+                                         
+                                           ?>
+                                           
+                                            <tr>
+                                                <th>Name</th>
+
+                                                <th>Location</th>
+                                                <th>Mobile</th>
+                                                <th>Email</th>
+
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                           
+                                           
                                         </tbody>
                                     </table>
                                 </div>
