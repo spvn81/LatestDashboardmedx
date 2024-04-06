@@ -107,6 +107,46 @@
                                 <div class="table-responsive">
                                     <table class="table table-hover js-basic-example dataTable table-custom">
                                         <thead class="theme-cyan">
+                                            <?php 
+                                            foreach($results as $data){?>
+                                             <tr>
+                                              
+
+                                              <td>
+
+                                                  <select class="form-select form-group col-12" name="links" size="1"
+                                                      onchange="window.location.href.value"
+                                                      aria-label="Default select example" id=""
+                                                      style="padding-top: 1%;padding-bottom: 1%;">
+                                                      <option value="">select</option>
+                                                      <option value="">
+                                                          Cancel</option>
+                                                      <option value="">Add
+                                                          Patient</option>
+
+                                                  </select>
+                                              </td>
+                                              <td>
+
+                                                  <button type="button" 
+                                                      style="background-color: transparent;border: transparent;"
+                                                      class="btn btn-info rounded-circle" title="Edit">
+                                                      <i class="fa fa-edit" style="color: #000;"></i>
+                                                  </button>
+
+
+                                                  <button type="button" class="btn btn-danger rounded-circle"
+                                                      title="Delete"
+                                                      style="background-color: transparent;border: transparent;"><i
+                                                          class="icon-trash"
+                                                          style="color: #000;size: 12px;"></i></button>
+
+                                              </td>
+
+                                          </tr>
+<?php
+                                            }
+                                            ?>
                                             <tr>
                                                 <th>Name</th>
 
@@ -119,47 +159,9 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                           
                                             <tr>
-                                                <td><a href="patient-profile.php">Andrea Lalema</a></td>
-
-                                                <td>Gachibowli</td>
-                                                <td>6309877651</td>
-                                                <td>Info@name@gmail.com</td>
-
-                                                <td>
-
-                                                    <select class="form-select form-group col-12" name="links" size="1"
-                                                        onchange="window.location.href.value"
-                                                        aria-label="Default select example" id=""
-                                                        style="padding-top: 1%;padding-bottom: 1%;">
-                                                        <option value="">select</option>
-                                                        <option value="">
-                                                            Cancel</option>
-                                                        <option value="">Add
-                                                            Patient</option>
-
-                                                    </select>
-                                                </td>
-                                                <td>
-
-                                                    <button type="button" 
-                                                        style="background-color: transparent;border: transparent;"
-                                                        class="btn btn-info rounded-circle" title="Edit">
-                                                        <i class="fa fa-edit" style="color: #000;"></i>
-                                                    </button>
-
-
-                                                    <button type="button" class="btn btn-danger rounded-circle"
-                                                        title="Delete"
-                                                        style="background-color: transparent;border: transparent;"><i
-                                                            class="icon-trash"
-                                                            style="color: #000;size: 12px;"></i></button>
-
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td><a href="patient-profile.php">Ramu</a></td>
+                                                <td><a href="patient-profile.php"><?=$data?></a></td>
 
                                                 <td>Gachibowli</td>
                                                 <td>6309877651</td>
