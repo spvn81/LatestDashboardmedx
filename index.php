@@ -32,7 +32,7 @@
                             <p class="lead">Login to your account</p>
                         </div>
                         <div class="body">
-                            <form class="form-auth-small" action="dashboard.html">
+                            <form class="form-auth-small" action="dashboard.php">
                                 <div class="form-group">
                                     <label for="signin-email" class="control-label sr-only">Email</label>
                                     <input type="email" class="form-control" id="signin-email" value="Admin@gmail.com" placeholder="Email">

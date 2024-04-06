@@ -1,25 +1,6 @@
-<!doctype html>
-<html lang="en">
-
-
-<!-- Mirrored from www.wrraptheme.com/templates/lucid/hospital/light/forms-wizard.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Mar 2024 08:15:48 GMT -->
-<head>
-<title>:: Lucid Hospital :: Form Wizard</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<meta name="description" content="Lucid Bootstrap 4.1.1 Admin Template">
-<meta name="author" content="WrapTheme, design by: ThemeMakker.com">
-
-<link rel="icon" href="assets/img/logo-dark.png" type="image/x-icon">
-<!-- VENDOR CSS -->
-<link rel="stylesheet" href="assets/new/vendor/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/new/vendor/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/new/vendor/jquery-steps/jquery.steps.css">
-
-<!-- MAIN CSS -->
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="assets/css/color_skins.css">
+<?php 
+ include('includes/header.php');
+?>
 </head>
 <body class="theme-cyan">
 

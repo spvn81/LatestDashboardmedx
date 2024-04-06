@@ -1,26 +1,6 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <title>MedXind</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <!-- VENDOR CSS -->
-    <link rel="stylesheet" href="assets/new/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/new/vendor/font-awesome/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="assets/new/vendor/jquery-datatable/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet"
-        href="assets/new/vendor/jquery-datatable/fixedeader/dataTables.fixedcolumns.bootstrap4.min.css">
-    <link rel="stylesheet"
-        href="assets/new/vendor/jquery-datatable/fixedeader/dataTables.fixedheader.bootstrap4.min.css">
-    <link rel="stylesheet" href="assets/new/vendor/sweetalert/sweetalert.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="icon" href="assets/img/logo-dark.png" type="image/x-icon">
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/color_skins.css">
+<?php 
+ include('includes/header.php');
+?>
     <style>
         td.details-control {
             background: url('assets/new/images/details_open.png') no-repeat center center;
@@ -81,46 +61,9 @@
             </div>
         </nav>
 
-        <div id="left-sidebar" class="sidebar" style="background-color: #fff;">
-            <div class="sidebar-scroll">
-                <!-- Tab panes -->
-                <div class="tab-content p-l-0 p-r-0">
-                    <div class="tab-pane active" id="menu">
-                        <nav class="sidebar-nav">
-                            <ul class="main-menu metismenu">
-                                <li class=""><a href="dashboard.html"><i
-                                            class="icon-home"></i><span>Dashboard</span></a></li>
-                                <li class="active"><a href="javascript:void(0);" class="has-arrow"><i
-                                            class="icon-user-follow"></i><span>Geriatric Care</span> </a>
-                                    <ul>
-                                        <li><a href="enquiry.html">Enquiry</a></li>
-                                        <li><a href="patientslist.html">Geriatric List</a></li>
-                                        <li><a href="addpatient.html">Add Geriatric</a></li>
-                                        <li><a href="packages.html">Packages</a></li>
-                                        <li><a href="testmonials.html">Testmonials</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="javascript:void(0);" class="has-arrow"><i
-                                            class="icon-user-follow"></i><span>Medical Treatment</span> </a>
-                                    <ul>
-                                        <li><a href="medicaltourismenquiryform.html">MedicalTourism Enquiry</a></li>
-                                        <li><a href="doctor-profile.html">Book Appointment</a></li>
-                                        <li><a href="doctor-profile.html">Edit Appointment</a></li>
-
-                                    </ul>
-                                </li>
-                                <li><a href="index.html"><i class="icon-login"></i><span>Logout</span> </a>
-
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-
-
-
-                </div>
-            </div>
-        </div>
+        <?php 
+   include('includes/sidebar.php');
+   ?>
 
         <div id="main-content">
             <div class="container-fluid">

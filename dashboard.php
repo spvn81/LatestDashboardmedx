@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="navbar-brand">
-                    <a href="dashboard.html"><img
+                    <a href="dashboard.php"><img
                             src="medx.png"
                             alt="Medx Logo" class="img-responsive logo" width="20"></a>
                 </div>
@@ -94,28 +94,28 @@
                     <div class="tab-pane active" id="menu">
                         <nav class="sidebar-nav">
                             <ul class="main-menu metismenu">
-                                <li class="active"><a href="dashboard.html"><i
+                                <li class="active"><a href="dashboard.php"><i
                                             class="icon-home"></i><span>Dashboard</span></a></li>
                                             <li class="active"><a href="javascript:void(0);" class="has-arrow"><i
                                                 class="icon-user-follow"></i><span>Geriatric Care</span> </a>
                                             <ul>
-                                              <li><a href="enquiry.html">Enquiry</a></li>
-                                              <li><a href="patientslist.html">Geriatric List</a></li>
-                                              <li><a href="addpatient.html">Add Geriatric</a></li>
-                                              <li><a href="packages.html">Packages</a></li>
-                                              <li><a href="testmonials.html">Testmonials</a></li>
+                                              <li><a href="enquiry.php">Enquiry</a></li>
+                                              <li><a href="patientslist.php">Geriatric List</a></li>
+                                              <li><a href="addpatient.php">Add Geriatric</a></li>
+                                              <li><a href="packages.php">Packages</a></li>
+                                              <li><a href="testmonials.php">Testmonials</a></li>
                                             </ul>
                                           </li>
                                           <li><a href="javascript:void(0);" class="has-arrow"><i class="icon-user-follow"></i><span>Medical
                                                 Treatment</span> </a>
                                             <ul>
-                                              <li><a href="medicaltourismenquiryform.html">MedicalTourism Enquiry</a></li>
-                                              <li><a href="doctor-profile.html">Book Appointment</a></li>
-                                              <li><a href="doctor-profile.html">Edit Appointment</a></li>
+                                              <li><a href="medicaltourismenquiryform.php">MedicalTourism Enquiry</a></li>
+                                              <li><a href="doctor-profile.php">Book Appointment</a></li>
+                                              <li><a href="doctor-profile.php">Edit Appointment</a></li>
                           
                                             </ul>
                                           </li>
-                                <li><a href="index.html" ><i
+                                <li><a href="index.php" ><i
                                             class="icon-login"></i><span>Logout</span> </a>
 
                                 </li>
