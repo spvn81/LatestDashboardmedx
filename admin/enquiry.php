@@ -1,5 +1,16 @@
 <?php 
  include('includes/header.php');
+ include('../config/conn.php');
+ $sql = "SELECT * FROM geriatric_care";
+    $stmt = $pdo->prepare($sql);
+
+    // Execute the query
+    $stmt->execute();
+
+    // Fetch all rows as an associative array
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    print_r($results);
+    echo "vsdjwyef";
 ?>
     <style>
         td.details-control {
@@ -33,7 +44,7 @@
                 </div>
 
                 <div class="navbar-brand">
-                    <a href="dashboard.html"><img src="medx.png" alt="Medx Logo" class="img-responsive logo"></a>
+                    <a href="dashboard.php"><img src="medx.png" alt="Medx Logo" class="img-responsive logo"></a>
                 </div>
 
                 <div class="navbar-right">
@@ -72,13 +83,17 @@
                         <div class="col-sm-7 col-6">
                             <div class="col-lg-6 col-md-8 col-sm-12">
                                 <h2><a href="javascript:void(0);" class="btn btn-xs btn-link btn-toggle-fullwidth"><i
-                                            class="fa fa-arrow-left"></i></a><a href="patient-profile.html"> Enquiry
+                                            class="fa fa-arrow-left"></i></a><a href="patient-profile.php"> Enquiry
                                     </a></h2>
-
+                                 <?php 
+                                 echo "<pre>";
+                                 print_r($results);
+                                 echo "</pre>";
+                                 ?>
                             </div>
                         </div>
                         <!-- <div class="col-sm-5 col-6  m-b-30" style="text-align: end;align-items: end;">
-                            <a href="addenquiry.html" class="btn btn-primary btn-rounded"><i
+                            <a href="addenquiry.php" class="btn btn-primary btn-rounded"><i
                                     class="fa fa-plus"></i>
                                 Add Enquiry</a>
                         </div> -->
@@ -105,7 +120,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><a href="patient-profile.html">Andrea Lalema</a></td>
+                                                <td><a href="patient-profile.php">Andrea Lalema</a></td>
 
                                                 <td>Gachibowli</td>
                                                 <td>6309877651</td>
@@ -144,7 +159,7 @@
 
                                             </tr>
                                             <tr>
-                                                <td><a href="patient-profile.html">Ramu</a></td>
+                                                <td><a href="patient-profile.php">Ramu</a></td>
 
                                                 <td>Gachibowli</td>
                                                 <td>6309877651</td>
@@ -158,7 +173,7 @@
                                                         style="padding-top: 1%;padding-bottom: 1%;">
                                                         <option selected>select</option>
                                                         <option value="1">Cancel</option>
-                                                        <option value="addpatient.html">Add Patient</option>
+                                                        <option value="addpatient.php">Add Patient</option>
 
                                                     </select>
                                                 </td>
@@ -209,7 +224,7 @@
 <script src="assets/new/vendor/jquery-datatable/buttons/dataTables.buttons.min.js"></script>
 <script src="assets/new/vendor/jquery-datatable/buttons/buttons.bootstrap4.min.js"></script>
 <script src="assets/new/vendor/jquery-datatable/buttons/buttons.colVis.min.js"></script>
-<script src="assets/new/vendor/jquery-datatable/buttons/buttons.html5.min.js"></script>
+<script src="assets/new/vendor/jquery-datatable/buttons/buttons.php5.min.js"></script>
 <script src="assets/new/vendor/jquery-datatable/buttons/buttons.print.min.js"></script>
 
 <script src="assets/new/vendor/sweetalert/sweetalert.min.js"></script> <!-- SweetAlert Plugin Js -->
