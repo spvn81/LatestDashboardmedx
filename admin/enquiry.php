@@ -105,53 +105,7 @@
                                 <div class="table-responsive">
                                     <table class="table table-hover js-basic-example dataTable table-custom">
                                         <thead class="theme-cyan">
-                                            <?php 
-                                           
-
-                                            foreach($results as $data){?>
-                                             <tr>
-                                                <td><a href="patient-profile.php"><?=$data['full_name']?></a></td>
-
-                                                <td><?php $data['area'].$data['city'].$data['state']?></td>
-                                                <td><?=$data['phone_number']?></td>
-                                                <td><?=$data['email']?></td>
-
-                                                <td>
-
-                                                    <select class="form-select form-group col-12" name="links"
-                                                        onchange="window.location.href.value"
-                                                        aria-label="Default select example" id="treatmentSelect"
-                                                        style="padding-top: 1%;padding-bottom: 1%;">
-                                                        <option selected>select</option>
-                                                        <option value="1">Cancel</option>
-                                                        <option value="addpatient.php">Add Patient</option>
-
-                                                    </select>
-                                                </td>
-                                                <td>
-
-                                                    <button type="button" 
-                                                        style="background-color: transparent;border: transparent;"
-                                                        class="btn btn-info rounded-circle" title="Edit">
-                                                        <i class="fa fa-edit" style="color: #000;"></i>
-                                                    </button>
-
-
-                                                    <button type="button" class="btn btn-danger rounded-circle"
-                                                        title="Delete"
-                                                        style="background-color: transparent;border: transparent;"><i
-                                                            class="icon-trash"
-                                                            style="color: #000;size: 12px;"></i></button>
-
-                                                </td>
-
-                                            </tr>
-                                             <?php  
-                                            }
-                                         
-                                           ?>
-                                           
-                                            <tr>
+                                        <tr>
                                                 <th>Name</th>
 
                                                 <th>Location</th>
@@ -162,9 +116,59 @@
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
+                                     
+                                           
+                                       
                                         <tbody>
                                            
+                                        <?php 
                                            
+
+                                           foreach($results as $data){?>
+                                            <tr>
+                                               <td><a href="patient-profile.php"><?=$data['full_name']?></a></td>
+
+                                               <td><?php 
+                                                $location =$data['area'].','.$data['city'].','.$data['state'];
+                                                echo $location;
+                                               ?></td>
+                                               <td><?=$data['phone_number']?></td>
+                                               <td><?=$data['email']?></td>
+
+                                               <td>
+
+                                                   <select class="form-select form-group col-12" name="links"
+                                                       onchange="window.location.href.value"
+                                                       aria-label="Default select example" id="treatmentSelect"
+                                                       style="padding-top: 1%;padding-bottom: 1%;">
+                                                       <option selected>select</option>
+                                                       <option value="1">Cancel</option>
+                                                       <option value="addpatient.php">Add Patient</option>
+
+                                                   </select>
+                                               </td>
+                                               <td>
+
+                                                   <button type="button" 
+                                                       style="background-color: transparent;border: transparent;"
+                                                       class="btn btn-info rounded-circle" title="Edit">
+                                                       <i class="fa fa-edit" style="color: #000;"></i>
+                                                   </button>
+
+
+                                                   <button type="button" class="btn btn-danger rounded-circle"
+                                                       title="Delete"
+                                                       style="background-color: transparent;border: transparent;"><i
+                                                           class="icon-trash"
+                                                           style="color: #000;size: 12px;"></i></button>
+
+                                               </td>
+
+                                           </tr>
+                                            <?php  
+                                           }
+                                        
+                                          ?>
                                         </tbody>
                                     </table>
                                 </div>
